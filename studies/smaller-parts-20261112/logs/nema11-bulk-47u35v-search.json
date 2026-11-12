@@ -1,0 +1,71 @@
+{
+  "query": "47uF 35V",
+  "results": [
+    {
+      "source": "jlcpcb",
+      "lcsc": 3344,
+      "mfr": "RVT1V470M0605",
+      "package": "SMD,D6.3xL5.4mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-55℃~+105℃ 2000hrs@105℃ 35V 47uF 5.4mm 6.3mm ±20% SMD,D6.3xL5.4mm Aluminum Electrolytic Capacitors - SMD ROHS",
+      "stock": 62623,
+      "price": 0.031
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 88810,
+      "mfr": "35TZV47M6.3X6.1",
+      "package": "SMD,D6.3xL6.1mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-55℃~+105℃ 2000hrs@105℃ 250mA@100kHz 35V 47uF 6.1mm 6.3mm ±20% SMD,D6.3xL6.1mm Aluminum Electrolytic Capacitors - SMD ROHS",
+      "stock": 36155,
+      "price": 0.1732
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 346954,
+      "mfr": "BXA35V47M6.3*6 6.3TP",
+      "package": "SMD,D6.3xL6mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-45℃~+105℃ 1000hrs@105℃ 230mA@100kHz 35V 440mΩ@100kHz 47uF 6.3mm 6mm ±20% SMD,D6.3xL6mm Aluminum Electrolytic Capacitors - SMD ROHS",
+      "stock": 3018,
+      "price": 0.1022
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 721322,
+      "mfr": "SVZ1VM470E06E00RAXXX",
+      "package": "SMD,D6.3xL6mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-55℃~+105℃ 2000hrs@125℃ 35V 47uF 6.3mm 6mm ±20% SMD,D6.3xL6mm Polymer Aluminum Capacitors ROHS",
+      "stock": 2940,
+      "price": 0.1867
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 48970434,
+      "mfr": "RYHG35V47UF5*8",
+      "package": "插件,D5xL8mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "",
+      "stock": 668,
+      "price": 0.1132
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 264034,
+      "mfr": "35SVPK47M",
+      "package": "SMD,D6.3xL5.9mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-55℃~+125℃ 1000hrs@125℃ 27mΩ@100kHz 35V 47uF 5.9mm 6.3mm 930mA@100kHz Polymer ±20% SMD,D6.3xL5.9mm Polymer Aluminum Capacitors ROHS",
+      "stock": 2,
+      "price": 1.6627
+    }
+  ]
+}

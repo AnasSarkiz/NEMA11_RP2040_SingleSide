@@ -1,0 +1,12 @@
+Building 1 file(s)...
+Building studies/smaller-parts-20261112/bulk-qualification.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/studies/smaller-parts-20261112/bulk-qualification/circuit.json
+No <schematicsheet> was found. Add a <schematicsheet> to define the schematic drawing area.
+
+Build complete
+  Circuits  1 passed
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

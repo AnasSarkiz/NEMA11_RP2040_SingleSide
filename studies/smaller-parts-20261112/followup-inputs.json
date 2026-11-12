@@ -1,0 +1,136 @@
+{
+  "base_commit": "f64bd9a5d20aa3a4adc8928debaa64b06b6bc279",
+  "upstream_pr": "https://github.com/tscircuit/easyeda-converter/pull/656",
+  "files": [
+    {
+      "path": "studies/smaller-parts-20261112/ina241-upstream-repro/C5240853.raweasy.json",
+      "sha256": "b3929372e49b618e0c6e5daaf74cfef941374ecd056e8a054bec90bd1dc72956",
+      "bytes": 29343
+    },
+    {
+      "path": "studies/smaller-parts-20261112/ina241-upstream-repro/README.md",
+      "sha256": "b8306d35508c55f7482b069b2054fb62f157c58d3cc1e3b462bee8807610ab77",
+      "bytes": 2689
+    },
+    {
+      "path": "studies/smaller-parts-20261112/ina241-upstream-repro/after.circuit.json",
+      "sha256": "3ca740fa4706c12033e529e674da8a3abfd904ba3ce7e93251d649c6d7b4aea9",
+      "bytes": 25669
+    },
+    {
+      "path": "studies/smaller-parts-20261112/ina241-upstream-repro/after.pcb.svg",
+      "sha256": "853c503651e99dc2f867f788989662bf861a3f7e46467ac8c19228ca4bdc07a4",
+      "bytes": 34807
+    },
+    {
+      "path": "studies/smaller-parts-20261112/ina241-upstream-repro/after.schematic.png",
+      "sha256": "3ff9884338c607b2d015f82cc1abf11a18d60db43e4140c89a4fcfaffd1b1370",
+      "bytes": 28249
+    },
+    {
+      "path": "studies/smaller-parts-20261112/ina241-upstream-repro/after.schematic.svg",
+      "sha256": "21b99cff1caced743558d1d150e9b39cacbf2153ff96f30f00c0ba277d6483af",
+      "bytes": 39748
+    },
+    {
+      "path": "studies/smaller-parts-20261112/ina241-upstream-repro/after.tsx",
+      "sha256": "5d92d4a6ed5441d8c3b688e61223b7d0e6fae0bfecd49b571d6e8d0c55b0db9e",
+      "bytes": 3265
+    },
+    {
+      "path": "studies/smaller-parts-20261112/ina241-upstream-repro/before.circuit.json",
+      "sha256": "10f5c2f99b656ec8d3f4245341c16d3b8a4a43d3cd9c8284c0da2c243cd26b85",
+      "bytes": 25697
+    },
+    {
+      "path": "studies/smaller-parts-20261112/ina241-upstream-repro/before.pcb.svg",
+      "sha256": "853c503651e99dc2f867f788989662bf861a3f7e46467ac8c19228ca4bdc07a4",
+      "bytes": 34807
+    },
+    {
+      "path": "studies/smaller-parts-20261112/ina241-upstream-repro/before.schematic.png",
+      "sha256": "fcd7b715f376d2c309ad487c31666a398ab1df76a380be642389b99cac500371",
+      "bytes": 28503
+    },
+    {
+      "path": "studies/smaller-parts-20261112/ina241-upstream-repro/before.schematic.svg",
+      "sha256": "0cf4e324b814ef5ea1a17adc689a30ed1375a813b7970d4dedac566a19c37355",
+      "bytes": 39944
+    },
+    {
+      "path": "studies/smaller-parts-20261112/ina241-upstream-repro/before.tsx",
+      "sha256": "67425b9b570fea6be3f3874a31cd0174ca77feb8a089ce25b7395be2faa60d4c",
+      "bytes": 3295
+    },
+    {
+      "path": "studies/smaller-parts-20261112/ina241-upstream-repro/comparison.json",
+      "sha256": "9428dddcbe9f03149b33c1911c639394ef439eb25943f9b20143af9b01396c72",
+      "bytes": 1560
+    },
+    {
+      "path": "studies/smaller-parts-20261112/ina241-upstream-repro/ina241-converter-before.log",
+      "sha256": "9426c3e58ef7338faa22bda56edea53bc736c79cb15b8ba0b37d9c3af0f363a6",
+      "bytes": 1454
+    },
+    {
+      "path": "studies/smaller-parts-20261112/ina241-upstream-repro/ina241-converter-build.log",
+      "sha256": "b66af5d8fa1435d88117f06484fba4c4dc1a51ea718d5043fa9f1e98ee484552",
+      "bytes": 1205
+    },
+    {
+      "path": "studies/smaller-parts-20261112/ina241-upstream-repro/ina241-converter-focused-final.log",
+      "sha256": "de68ffbd8458adce0f784d7d1416d9738d965cca4a3f77346ea52d475698bc31",
+      "bytes": 621
+    },
+    {
+      "path": "studies/smaller-parts-20261112/ina241-upstream-repro/ina241-converter-format-final.log",
+      "sha256": "889d6d2b5794a1a27c2e0a9c335d3bf382d46a40420fc308b43e8851688b41b6",
+      "bytes": 89
+    },
+    {
+      "path": "studies/smaller-parts-20261112/ina241-upstream-repro/ina241-converter-full-suite.log",
+      "sha256": "e26740ebf228da8ba2c7823f7c2a3137f94ecd2839a5d85d9379f8f1687d0ffe",
+      "bytes": 49358
+    },
+    {
+      "path": "studies/smaller-parts-20261112/ina241-upstream-repro/ina241-converter-typecheck-final.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "studies/smaller-parts-20261112/ina241-upstream-repro/rasterize.ts",
+      "sha256": "f763b9145bb7ff7fcf0ab355127088f61b3ff4b1d6b4145a08f987efe40eee5a",
+      "bytes": 387
+    },
+    {
+      "path": "studies/smaller-parts-20261112/ina241-upstream-repro/render.ts",
+      "sha256": "b9ff07158bc0eb51840ba005b2e4a236d53404322888a94e443c0e4dfc25c170",
+      "bytes": 1785
+    },
+    {
+      "path": "studies/smaller-parts-20261112/bulk-import-staging/imports/RYHG35V47UF5_8/RYHG35V47UF5_8.tsx",
+      "sha256": "7ddba683f71834d25109225074433a8d87f5433508f8f8fa44fe8b10dc768902",
+      "bytes": 1303
+    },
+    {
+      "path": "studies/smaller-parts-20261112/bulk-qualification.circuit.tsx",
+      "sha256": "4f1ac8f277b8ff6e9f1710b7006c3d53f4da70c6bc1b8029c2625319b679cd48",
+      "bytes": 520
+    },
+    {
+      "path": "studies/smaller-parts-20261112/bulk-review.py",
+      "sha256": "dbce773e7a95dd7c739b44f882da11a30af505a0807aa4937eeb04c3d07b3cb3",
+      "bytes": 2602
+    },
+    {
+      "path": "studies/smaller-parts-20261112/bulk-review.json",
+      "sha256": "581cf086004899f8d71d62509e7892ca630f78b6ef2f581c0b428923da52d6b4",
+      "bytes": 2844
+    },
+    {
+      "path": "dist/studies/smaller-parts-20261112/bulk-qualification/circuit.json",
+      "sha256": "382b13274408fb6dd6ba5a5dbfda724fed5d4c0e8f6e3756358a7b8049c4c9ed",
+      "bytes": 12979
+    }
+  ]
+}

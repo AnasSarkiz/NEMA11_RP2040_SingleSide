@@ -1,0 +1,16 @@
+bun test v1.4.4 (38afee6c8)
+
+tests/internally-connected-pins-tsx.test.ts:
+(pass) converter emits permanent pin groups for C318884 and preserves caller overrides [4890.21ms]
+
+tests/convert-to-ts/C5240853-nc-ground-repro.test.ts:
+(pass) does not turn ambiguous NC labels into a prohibition on connection [15.45ms]
+(pass) preserves INA241A2 pin 4 and explicit datasheet semantics without changing the component geometry [96.83ms]
+
+tests/convert-to-ts/infer-pin-attributes.test.ts:
+(pass) infers only unambiguous IC power and ground attributes [0.11ms]
+
+ 4 pass
+ 0 fail
+ 85 expect() calls
+Ran 4 tests across 3 files. [5.71s]

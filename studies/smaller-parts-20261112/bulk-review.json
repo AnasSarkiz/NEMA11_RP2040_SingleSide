@@ -1,0 +1,88 @@
+{
+  "part": "C48970434",
+  "manufacturer_part_number": "RYHG35V47UF5*8",
+  "source_courtyard_mm2": 30.291814439999513,
+  "native_courtyard_mm2": 30.291814439999513,
+  "previous_bulk_courtyard_mm2": 66.31474584908533,
+  "hypothetical_full_courtyard_mm2": 699.6371634994422,
+  "provisional_available_mm2": 714.6022182822014,
+  "conditional_area_margin_mm2": 14.965054782759239,
+  "conditional_area_screen_pass": true,
+  "native_counts": {
+    "source_group": 1,
+    "source_port": 2,
+    "source_component": 1,
+    "source_net": 2,
+    "source_board": 1,
+    "source_trace": 2,
+    "schematic_component": 1,
+    "schematic_group": 1,
+    "schematic_port": 2,
+    "schematic_trace": 2,
+    "schematic_net_label": 2,
+    "schematic_missing_sheet_warning": 1,
+    "pcb_component": 1,
+    "pcb_board": 1,
+    "pcb_plated_hole": 2,
+    "pcb_silkscreen_circle": 1,
+    "pcb_silkscreen_text": 2,
+    "pcb_courtyard_outline": 1,
+    "pcb_port": 2,
+    "cad_component": 1,
+    "source_project_metadata": 1
+  },
+  "through_holes": [
+    {
+      "type": "pcb_plated_hole",
+      "pcb_plated_hole_id": "pcb_plated_hole_0",
+      "pcb_component_id": "pcb_component_0",
+      "pcb_port_id": "pcb_port_0",
+      "outer_diameter": 1.0999978,
+      "hole_diameter": 0.700024,
+      "shape": "circle",
+      "port_hints": [
+        "unnamed_platedhole1",
+        "pin2"
+      ],
+      "x": 0.999998,
+      "y": 0,
+      "layers": [
+        "top",
+        "bottom"
+      ],
+      "is_covered_with_solder_mask": false,
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "pcb_plated_hole",
+      "pcb_plated_hole_id": "pcb_plated_hole_1",
+      "pcb_component_id": "pcb_component_0",
+      "pcb_port_id": "pcb_port_1",
+      "outer_diameter": 1.0999978,
+      "hole_diameter": 0.700024,
+      "shape": "circle",
+      "port_hints": [
+        "unnamed_platedhole2",
+        "pin1"
+      ],
+      "x": -0.999998,
+      "y": 0,
+      "layers": [
+        "top",
+        "bottom"
+      ],
+      "is_covered_with_solder_mask": false,
+      "subcircuit_id": "subcircuit_source_group_0"
+    }
+  ],
+  "routing_attempted": false,
+  "qualified": false,
+  "full_board_placement_pass": false,
+  "manufacturing_ready": false,
+  "native_body_model_verified": false,
+  "active_controller_unchanged": true,
+  "native_build_exit": 0,
+  "source_sha256": "7ddba683f71834d25109225074433a8d87f5433508f8f8fa44fe8b10dc768902",
+  "native_sha256": "382b13274408fb6dd6ba5a5dbfda724fed5d4c0e8f6e3756358a7b8049c4c9ed",
+  "limits": "Area arithmetic only. Requires GH harness acceptance and qualification, supported INA241 correction/fresh import, capacitor manufacturer/process/electrical validation, bottom lead/solder and motor clearance, USB footprint validation and actual placement/routing. Native capacitor bounds describe the lands, not a verified 5x8mm body."
+}

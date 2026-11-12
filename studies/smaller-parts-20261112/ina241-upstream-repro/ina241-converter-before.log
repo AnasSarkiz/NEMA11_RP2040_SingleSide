@@ -1,0 +1,53 @@
+bun test v1.4.4 (38afee6c8)
+
+tests/convert-to-ts/C5240853-nc-ground-repro.test.ts:
+30 |       pin3: [" nc2 "],
+31 |       pin4: ["NC", "NC3"],
+32 |       pin5: ["NC", "GND"],
+33 |       pin6: ["NC", "GPIO0"],
+34 |     }),
+35 |   ).toEqual({})
+         ^
+error: expect(received).toEqual(expected)
+
+- {}
++ {
++   "pin1": {
++     "doNotConnect": true,
++   },
++   "pin2": {
++     "doNotConnect": true,
++   },
++   "pin3": {
++     "doNotConnect": true,
++   },
++   "pin4": {
++     "doNotConnect": true,
++   },
++ }
+
+- Expected  - 1
++ Received  + 14
+
+      at <anonymous> (/workspace/scratch/07b71d1575ce/easyeda-ina241-20261112/tests/convert-to-ts/C5240853-nc-ground-repro.test.ts:35:5)
+(fail) does not turn ambiguous NC labels into a prohibition on connection [1.89ms]
+51 |   try {
+52 |     const baseline = evaluateProps(
+53 |       await convertRawEasyToTsx({ rawEasy: raw }),
+54 |     )
+55 |     expect(baseline.pinLabels.pin4).toEqual(["NC"])
+56 |     expect(baseline.pinAttributes?.pin4).toBeUndefined()
+                                              ^
+error: expect(received).toBeUndefined()
+
+Received: {
+  doNotConnect: true,
+}
+
+      at <anonymous> (/workspace/scratch/07b71d1575ce/easyeda-ina241-20261112/tests/convert-to-ts/C5240853-nc-ground-repro.test.ts:56:42)
+(fail) preserves INA241A2 pin 4 and explicit datasheet semantics without changing the component geometry [162.45ms]
+
+ 0 pass
+ 2 fail
+ 5 expect() calls
+Ran 2 tests across 1 file. [810.00ms]

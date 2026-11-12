@@ -10,8 +10,8 @@ Both parts were freshly imported using supported CLI 0.1.2454, tscircuit 0.0.316
 | Function | Current candidate courtyard | Smaller candidate | Fresh supplier/native courtyard |
 | --- | ---: | --- | ---: |
 | Four-wire motor connection | WAGO 250-204 / C2765063: 199.999229 mm² | JST BM04B-GHS-TBT(LF)(SN) / C161692 | 54.593903 mm² |
-| Coil A current amplifier | INA240A1PWR / C93965: 27.328825 mm² | INA241A2IDDFR / C5240853 | 13.327747 mm² |
-| Coil B current amplifier | INA240A1PWR / C93965: 27.328825 mm² | INA241A2IDDFR / C5240853 | 13.327747 mm² |
+| Coil A current amplifier | INA240A1PWR / C93965: 27.328617 mm² | INA241A2IDDFR / C5240853 | 13.327747 mm² |
+| Coil B current amplifier | INA240A1PWR / C93965: 27.328617 mm² | INA241A2IDDFR / C5240853 | 13.327747 mm² |
 
 Recomputed from exact supplier polygons and independently compared with native emitted courtyard polygons:
 - Existing complete fitted set: **909.067160 mm²**.
@@ -64,6 +64,10 @@ The native build exits 0 and pin check reports zero errors/four unrelated warnin
 - The original upright-USB locator mismatch and bottom shell-paste/process concerns remain open.
 - Factory motor wires, rear fasteners, motor gap/insulation, wire exit, cable/plug/tool access and the complete assembly envelope remain unqualified.
 
-The complete untouched import/model files, fixture source/native output, hashes and review script are retained in the local study checkpoint. This published report preserves the verified result and exact candidate identities; it does not replace the full artifact transfer.
+The complete untouched import/model files, fixture source/native output, hashes and review script are published on the `study/smaller-components-20261112` branch, beginning with evidence commit `f64bd9a5d20aa3a4adc8928debaa64b06b6bc279`. See [the full evidence directory](https://github.com/AnasSarkiz/NEMA11_RP2040_SingleSide/tree/f64bd9a5d20aa3a4adc8928debaa64b06b6bc279/studies/smaller-parts-20261112) and its `inputs.json` manifest. The artifact transfer is complete; design qualification remains unchanged.
 
 Consequential decisions still open: accept a crimped motor harness instead of a spring clamp; resolve factory-wire fit/process; obtain a supported amplifier metadata correction; and select enough additional qualified size reductions to close the remaining area deficit before real packing and routing.
+
+## Follow-up evidence
+
+See [the upstream INA241 fix and separate before/after evidence](https://github.com/tscircuit/easyeda-converter/pull/656) and the study branch `studies/smaller-parts-20261112/ina241-upstream-repro/`. The additional unqualified radial-capacitor screen is documented in `studies/smaller-parts-20261112/bulk-followup.md`; its potential area saving changes no active design or qualification status.

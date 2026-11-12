@@ -1,0 +1,914 @@
+bun test v1.4.4 (38afee6c8)
+
+tests/npth-holes-roundtrip.test.ts:
+(pass) round-trips NPTH shapes, dimensions, positions, and rotations [643.35ms]
+
+tests/get-easyeda-pin-aliases.test.ts:
+(pass) converts external pin name PA0/RESET#/UPDI to connection aliases [0.42ms]
+(pass) converts external pin name #RST/NMI/SBWTDIO to connection aliases [0.02ms]
+(pass) converts external pin name PA0/RESET# to connection aliases
+(pass) converts external pin name P1.3/TA1.2/A3/C3 to connection aliases
+(pass) converts external pin name D+/D- to connection aliases
+(pass) converts external pin name SINEIN– to connection aliases [0.79ms]
+(pass) converts external pin name SINEIN− to connection aliases [0.02ms]
+(pass) converts external pin name –IN/−OUT to connection aliases [0.01ms]
+(pass) converts external pin name 3V3(OUT) to connection aliases
+(pass) converts external pin name (PA0) to connection aliases
+(pass) converts external pin name _READY_ to connection aliases
+(pass) converts external pin name 1&#96; to connection aliases [0.61ms]
+(pass) converts external pin name 2&#x60; to connection aliases [0.01ms]
+(pass) converts external pin name 1′ to connection aliases
+(pass) converts external pin name D&#43;/D&#8722; to connection aliases [0.01ms]
+(pass) converts external pin name  / PA0 / / UPDI /  to connection aliases [0.01ms]
+(pass) converts external pin name  to connection aliases
+(pass) converts external pin name +/- to connection aliases
+(pass) deduplicates aliases before distinguishing shared pin functions [1.03ms]
+
+tests/c5815189-npth-cutout-repro.test.ts:
+(pass) preserves C5815189's source capsule dimensions and locator spacing [11.63ms]
+(pass) preserves the captured pill hole through footprint TSX and native PCB rendering [256.18ms]
+(pass) expands the actual SVG end caps outside their vertical endpoint chords [0.30ms]
+
+tests/svg-arc-sweep.test.ts:
+(pass) selects the expected non-semicircular angular span for {"largeArcFlag":false,"sweepFlag":false,"centerY":-1.7320508075688772,"expectedSpanRadians":-1.0471975511965976} [0.14ms]
+(pass) selects the expected non-semicircular angular span for {"largeArcFlag":false,"sweepFlag":true,"centerY":1.7320508075688772,"expectedSpanRadians":1.0471975511965976} [0.01ms]
+(pass) selects the expected non-semicircular angular span for {"largeArcFlag":true,"sweepFlag":false,"centerY":1.7320508075688772,"expectedSpanRadians":-5.235987755982989} [0.01ms]
+(pass) selects the expected non-semicircular angular span for {"largeArcFlag":true,"sweepFlag":true,"centerY":-1.7320508075688772,"expectedSpanRadians":5.235987755982989}
+(pass) preserves SVG arc direction for {"radius":1,"largeArcFlag":false,"sweepFlag":false} [0.08ms]
+(pass) preserves SVG arc direction for {"radius":1,"largeArcFlag":false,"sweepFlag":true} [0.01ms]
+(pass) preserves SVG arc direction for {"radius":1,"largeArcFlag":true,"sweepFlag":false}
+(pass) preserves SVG arc direction for {"radius":1,"largeArcFlag":true,"sweepFlag":true}
+(pass) preserves SVG arc direction for {"radius":2,"largeArcFlag":false,"sweepFlag":false}
+(pass) preserves SVG arc direction for {"radius":2,"largeArcFlag":false,"sweepFlag":true}
+(pass) preserves SVG arc direction for {"radius":2,"largeArcFlag":true,"sweepFlag":false} [0.06ms]
+(pass) preserves SVG arc direction for {"radius":2,"largeArcFlag":true,"sweepFlag":true} [0.01ms]
+
+tests/convert-package-rect.test.ts:
+(pass) emits package RECT shapes as silkscreen rectangles [8.80ms]
+(pass) renders package RECT shapes in the PCB snapshot [113.21ms]
+
+tests/browser-bundle-websafe-guard.test.ts:
+(pass) browser bundle websafe guard > browser build does not include known non-websafe runtime baggage [13123.00ms]
+
+tests/bezier-paths.test.ts:
+(pass) retains known Bezier extrema and exact endpoints: M 0 0 C 0 10 10 10 10 0 [3.45ms]
+(pass) retains known Bezier extrema and exact endpoints: M 0 0 Q 5 10 10 0 [0.54ms]
+(pass) matches explicit absolute controls: M 2 3 c 0 10 10 10 10 0 [0.72ms]
+(pass) matches explicit absolute controls: M 2 3 q 5 10 10 0 [0.69ms]
+(pass) matches explicit absolute controls: M 0 0 C 0 1 1 1 1 0 1 -1 2 -1 2 0 [0.70ms]
+(pass) matches explicit absolute controls: M 0 0 c 0 1 1 1 1 0 0 -1 1 -1 1 0 [0.51ms]
+(pass) matches explicit absolute controls: M 0 0 Q 1 1 2 0 3 -1 4 0 [0.29ms]
+(pass) matches explicit absolute controls: M 0 0 C 0 1 1 1 1 0 S 2 -1 2 0 [0.79ms]
+(pass) matches explicit absolute controls: M 0 0 C 0 1 1 1 1 0 s 1 -1 1 0 [0.39ms]
+(pass) matches explicit absolute controls: M 0 0 S 1 1 2 0 3 -1 4 0 [0.26ms]
+(pass) matches explicit absolute controls: M 0 0 q 1 1 2 0 1 -1 2 0 [0.19ms]
+(pass) matches explicit absolute controls: M 0 0 Q 1 1 2 0 T 4 0 6 0 [1.25ms]
+(pass) matches explicit absolute controls: M 0 0 Q 1 1 2 0 t 2 0 2 0 [0.62ms]
+(pass) matches explicit absolute controls: M 0 0 C 0 1 1 1 1 0 L 2 0 S 3 1 4 0 [0.43ms]
+(pass) matches explicit absolute controls: M 0 0 Q 1 1 2 0 L 3 0 T 5 0 [0.59ms]
+(pass) matches explicit absolute controls: M 0 0 C 0 1 1 1 1 0 T 2 0 [0.28ms]
+(pass) matches explicit absolute controls: M 0 0 Q 1 1 2 0 S 3 1 4 0 [0.17ms]
+(pass) matches explicit absolute controls: M 0 0 Q 1 1 2 0 Z T 4 0 [0.63ms]
+(pass) bounds error against dense analytic samples for %s control points [6.47ms]
+(pass) bounds error against dense analytic samples for %s control points [4.78ms]
+(pass) does not collapse collinear overshoots or closed Bezier loops [0.55ms]
+(pass) fails rather than relaxing tolerance when the subdivision budget is exceeded [0.44ms]
+(pass) enforces the point limit at the subdivision boundary [10.95ms]
+
+tests/get-easyeda-npth-pill-hole.test.ts:
+(pass) preserves a 0-degree capsule with reverseSweep=false [0.64ms]
+(pass) preserves a 0-degree capsule with reverseSweep=true [0.05ms]
+(pass) preserves a 90-degree capsule with reverseSweep=false [0.06ms]
+(pass) preserves a 90-degree capsule with reverseSweep=true [0.04ms]
+(pass) preserves a 180-degree capsule with reverseSweep=false [0.11ms]
+(pass) preserves a 180-degree capsule with reverseSweep=true [0.09ms]
+(pass) preserves a 270-degree capsule with reverseSweep=false [0.11ms]
+(pass) preserves a 270-degree capsule with reverseSweep=true [0.05ms]
+(pass) leaves arbitrary and rotated NPTH regions as polygons [0.12ms]
+(pass) does not replace a non-capsule or open path: M 4 1 L 0 1 A 1 2 0 0 1 0 -1 L 4 -1 A 1 1 0 0 1 4 1 Z [0.05ms]
+(pass) does not replace a non-capsule or open path: M 4 1 L 0 1 A 1 1 0 0 0 0 -1 L 4 -1 A 1 1 0 0 0 4 1 Z [0.01ms]
+(pass) does not replace a non-capsule or open path: M 4 1 L 0 1 A 1 1 0 0 1 0 -1 L 4 -1 A 2 2 0 0 1 4 1 Z
+(pass) does not replace a non-capsule or open path: M 4 1 L 0 1 A 1 1 0 0 1 0 -1 L 3 -1 A 1 1 0 0 1 4 1 Z [0.03ms]
+(pass) does not replace a non-capsule or open path: M 4 1 L 0 1 A 2 2 0 0 1 0 -1 L 4 -1 A 2 2 0 0 1 4 1 Z [0.02ms]
+(pass) does not replace a non-capsule or open path: M 4 1 L 0 1 A 1 1 0 0 1 0 -1 L 4 -1 A 1 1 0 0 1 4 2 Z [0.01ms]
+(pass) does not replace a non-capsule or open path: M 4 1 L 0 1 A 1 1 0 0 1 0 -1 L 4 -1 A 1 1 0 0 1 4 1 [0.03ms]
+(pass) accepts circular semicircles with arc rotation %s [0.24ms]
+(pass) accepts circular semicircles with arc rotation %s [0.16ms]
+(pass) accepts circular semicircles with arc rotation %s [0.14ms]
+(pass) does not ignore extra or invalid SVG content: M 4 1 L 0 1 A 1 1 0 0 1 0 -1 L 4 -1 A 1 1 0 0 1 4 1 Z H 100 V 100 [0.06ms]
+(pass) does not ignore extra or invalid SVG content: M 4 1 L 0 1 A 1 1 0 0 1 0 -1 L 4 -1 A 1 1 0 0 1 4 1 Z C 1 2 3 4 5 6 [0.01ms]
+(pass) does not ignore extra or invalid SVG content: M 4 1 L 0 1 A 1 1 0 0 1 0 -1 L 4 -1 A 1 1 0 0 1 4 1 Z 1 2
+(pass) does not ignore extra or invalid SVG content: M 4 1 L 0 1 A 1 1 0 0 1 0 -1 L 4 -1 A 1 1 0 0 1 4 1 Z garbage [0.03ms]
+(pass) does not ignore extra or invalid SVG content: M 4 1 L 0 1 A 1 1 1e999 0 1 0 -1 L 4 -1 A 1 1 0 0 1 4 1 Z [0.01ms]
+(pass) does not ignore extra or invalid SVG content: M 4 1 L 0 1 A 1 1 0 2 1 0 -1 L 4 -1 A 1 1 0 0 1 4 1 Z [0.02ms]
+(pass) rejects near-semicircles with large-arc flag %s [0.05ms]
+(pass) rejects near-semicircles with large-arc flag %s [0.02ms]
+(pass) rejects slightly elliptical or asymmetric end caps [0.09ms]
+
+tests/normalize-pin-labels.test.ts:
+(pass) normalizePinLabels > handles the documentation example correctly [0.19ms]
+(pass) normalizePinLabels > handles empty input array [0.03ms]
+(pass) normalizePinLabels > handles pins with no labels [0.10ms]
+(pass) normalizePinLabels > preserves unique non-numeric labels [0.07ms]
+(pass) normalizePinLabels > normalizes leading hash active-low labels [0.31ms]
+(pass) normalizePinLabels > normalizes trailing hash active-low labels without double-prefixing [0.08ms]
+(pass) normalizePinLabels > deduplicates normalized active-low labels [0.04ms]
+(pass) normalizePinLabels > handles multiple labels per pin [0.12ms]
+(pass) normalizePinLabels > handles duplicate numeric labels [0.03ms]
+
+tests/parse-easyeda-path-commands.test.ts:
+(pass) retains commands after closepath instead of absorbing them into Z [0.05ms]
+(pass) retains repeated argument groups and signed scientific notation [0.02ms]
+(pass) keeps relative command letters distinct for callers [0.01ms]
+(pass) rejects incomplete or invalid command streams:  [0.14ms]
+(pass) rejects incomplete or invalid command streams: L 1 2
+(pass) rejects incomplete or invalid command streams: M 1 2 L 3
+(pass) rejects incomplete or invalid command streams: M 1 2 Z 3 4
+(pass) rejects incomplete or invalid command streams: M 1 2 Z garbage
+(pass) rejects incomplete or invalid command streams: M 1 2 L 3 4 @
+(pass) rejects incomplete or invalid command streams: M 1 2 L 3 4e
+(pass) rejects incomplete or invalid command streams: M 1 2 L 1e999 4
+(pass) rejects incomplete or invalid command streams: M 1 2 A 1 1 0 0 1 2 [0.03ms]
+
+tests/arc-utils.test.ts:
+(pass) generateArcFromSweep > uses the near circle center for a small arc [0.11ms]
+(pass) generateArcFromSweep > uses the opposite circle center for a large arc [0.24ms]
+
+tests/normalize-symbol-name.test.ts:
+(pass) normalizeSymbolName > converts + to _POS [0.10ms]
+(pass) normalizeSymbolName > converts - to _NEG [0.03ms]
+(pass) normalizeSymbolName > handles whitespace around + and - [0.03ms]
+(pass) normalizeSymbolName > preserves other names [0.08ms]
+(pass) normalizeSymbolName > handles names containing + or - but not exactly equal [0.05ms]
+(pass) normalizeSymbolName > handles empty strings [0.01ms]
+
+tests/expand-easyeda-path-data.test.ts:
+(pass) expandEasyEdaPathData repeated arguments > treats extra M coordinate pairs as implicit lines [0.04ms]
+(pass) expandEasyEdaPathData repeated arguments > preserves every coordinate pair after L [0.02ms]
+(pass) expandEasyEdaPathData repeated arguments > expands all A groups and continues from their final endpoint [0.18ms]
+(pass) expandEasyEdaPathData repeated arguments > starts the next arc at the last repeated M or L pair [0.12ms]
+(pass) expandEasyEdaPathData horizontal and vertical segments > preserves all four corners of an H/V rectangle [0.06ms]
+(pass) expandEasyEdaPathData horizontal and vertical segments > preserves repeated H and V arguments [0.03ms]
+(pass) expandEasyEdaPathData horizontal and vertical segments > starts an arc at the endpoint of preceding H/V segments [0.24ms]
+(pass) expandEasyEdaPathData relative commands > resolves relative lines around a rectangle [0.06ms]
+(pass) expandEasyEdaPathData relative commands > accumulates repeated relative move, line, H, and V arguments [0.06ms]
+(pass) expandEasyEdaPathData relative commands > resolves each relative arc endpoint from the preceding endpoint [0.05ms]
+(pass) expandEasyEdaPathData relative commands > resets the current point after closepath before a relative line [0.03ms]
+(pass) expandEasyEdaPathData unsupported geometry > rejects multiple subpaths instead of connecting separate outlines [0.06ms]
+(pass) expandEasyEdaPathData unsupported geometry > rejects malformed paths instead of silently omitting geometry: M 0 0 H [0.29ms]
+(pass) expandEasyEdaPathData unsupported geometry > rejects malformed paths instead of silently omitting geometry: M 0 0 L 1 [0.01ms]
+(pass) expandEasyEdaPathData unsupported geometry > rejects malformed paths instead of silently omitting geometry: M 0 0 L 1 1 @
+
+tests/npth-locating-holes-repro.test.ts:
+(pass) retains both non-plated locating holes during footprint generation [125.34ms]
+
+tests/c5815189-npth-hole-repro.test.ts:
+(pass) renders C5815189's imported NPTH locators with copper crossing the slot [2.61ms]
+(pass) imports C5815189's NPTH capsule as a pill hole through TSX [129.95ms]
+(pass) native DRC reports copper crossing C5815189's imported NPTH hole [294.32ms]
+
+tests/generate-symbol-tsx.test.ts:
+(pass) keeps the rectangle primitive when its fill is none [28.54ms]
+(pass) keeps the rectangle primitive when its fill is #880000 [14.49ms]
+(pass) keeps the rectangle primitive when its fill is  [6.76ms]
+(pass) generates a centered symbol with positioned, aliased ports [8.92ms]
+(pass) transforms EasyEDA paths, arcs, and text into symbol-local coordinates [54.37ms]
+(pass) keeps imported crystal symbols on tscircuit's schematic grid [2.83ms]
+(pass) uses the symbol bounds when EasyEDA head coordinates are stale [8.35ms]
+(pass) uses physical pin numbers when the symbol has duplicate SPICE numbers [10.50ms]
+(pass) distinguishes custom symbols from chip box representations [36.01ms]
+
+tests/get-easyeda-cad-model-placement.test.ts:
+(pass) getCadModelOffsetMmFromBounds > derives XY placement from explicit bounds even when _objMetadata is missing [13.23ms]
+(pass) getCadModelOffsetMmFromBounds > rebases XY against recentered footprint bounds [5.09ms]
+
+tests/npth-path-commands.test.ts:
+(pass) retains an H/V NPTH rectangle through conversion and TSX: M 4000 3000 H 4010 V 3010 L 4000 3010 Z [401.90ms]
+(pass) retains an H/V NPTH rectangle through conversion and TSX: m 4000 3000 h 10 v 10 l -10 0 z [33.34ms]
+
+tests/easyeda-path-budget.test.ts:
+(pass) bounds repeated curves in one or many commands: 0 [28.89ms]
+(pass) bounds repeated curves in one or many commands: 1 [16.43ms]
+(pass) skips a many-curve decoration without losing the footprint: 0 [26.01ms]
+(pass) skips a many-curve decoration without losing the footprint: 1 [24.55ms]
+(pass) rejects a many-curve physical NPTH instead of truncating it: 0 [16.02ms]
+(pass) rejects a many-curve physical NPTH instead of truncating it: 1 [16.70ms]
+(pass) counts earlier lines against the remaining curve budget [3.14ms]
+(pass) includes closure in the exact total vertex limit [7.69ms]
+(pass) rejects invalid generated coordinates for physical NPTHs: 0 [2.93ms]
+(pass) rejects invalid generated coordinates for physical NPTHs: 1 [2.86ms]
+
+tests/is-resistor-component.test.ts:
+(pass) recognizes Current Sense Resistors/Shunt Resistors with a non-resistor symbol prefix [1.50ms]
+(pass) recognizes Current Sense Resistors / Shunt Resistors with a non-resistor symbol prefix [1.70ms]
+(pass) recognizes Chip Resistor - Surface Mount with a non-resistor symbol prefix [1.82ms]
+(pass) recognizes Resistors with a non-resistor symbol prefix [1.44ms]
+(pass) keeps R? resistor detection when categories are absent [2.13ms]
+(pass) does not classify a U? component from package and resistance alone:  [1.44ms]
+(pass) does not classify a U? component from package and resistance alone: Current Sense Amplifiers [1.26ms]
+(pass) does not classify a U? component from package and resistance alone: NonResistors [1.50ms]
+(pass) requires a standard resistor package and valid resistance: {"package":"SOIC-8","Value":"180mΩ"} [0.96ms]
+(pass) requires a standard resistor package and valid resistance: {"package":"R1206","Value":"unavailable"} [1.47ms]
+(pass) requires a standard resistor package and valid resistance: {"package":"R1206","Value":"3.9uH"} [1.86ms]
+(pass) keeps multi-pin components as chips even with resistor metadata [8.68ms]
+(pass) recognizes a dimensional resistor package: RES-SMD_L1.55-W0.85 [2.16ms]
+(pass) recognizes a dimensional resistor package: RES-SMD_L2-W1 [1.61ms]
+(pass) recognizes a dimensional resistor package: RES-SMD_L1.6-W0.8-H0.5 [2.37ms]
+(pass) rejects an unsupported dimensional package: RES-SMD [1.78ms]
+(pass) rejects an unsupported dimensional package: RES-SMD_L1.55-W [0.86ms]
+(pass) rejects an unsupported dimensional package: RES-SMD_L1.55-W0.85oops [1.90ms]
+(pass) rejects an unsupported dimensional package: CAP-SMD_L1.55-W0.85 [1.28ms]
+(pass) rejects an unsupported dimensional package: RES-TH_L1.55-W0.85 [2.93ms]
+
+tests/get-polarized-pin-metadata.test.ts:
+(pass) getPolarizedPinMetadata > normalizes anode pin 1 [0.25ms]
+(pass) getPolarizedPinMetadata > normalizes decorated cathode pin 1 [0.08ms]
+
+tests/pin-attributes-conversion.test.ts:
+(pass) DRV8818 caller attributes populate all 29 physical Circuit JSON ports [23.54ms]
+(pass) raw TSX conversion retains all DRV8818 attributes, CAD and geometry [249.77ms]
+(pass) parsed TSX conversion retains all DRV8818 attributes, CAD and geometry [61.82ms]
+(pass) physical pinN values override numeric fields while preserving false, zero and capabilities [4997.04ms]
+(pass) an empty physical row suppresses signal aliases and automatic ground inference [70.18ms]
+(pass) unmatched attribute keys do not create phantom ports or TSX pins [46.37ms]
+(pass) omitted, undefined and empty options preserve existing Circuit JSON and TSX output [79.42ms]
+(pass) actual BGA ball identifiers outrank synthesized numeric source-port identities [13.63ms]
+(pass) attributes preserve custom schematic symbol [27.73ms]
+(pass) attributes preserve current-sense resistor classification [23.85ms]
+(pass) signal aliases fill absent physical rows but conflicting aliases are not merged [55.92ms]
+(pass) repeated copper pads share one physical port and one supplied attribute row [30.84ms]
+
+tests/arc-utils-semicircle.test.ts:
+(pass) generateArcFromSweep semicircle tolerance > arcs an exact semicircle instead of returning a flat chord [0.16ms]
+(pass) generateArcFromSweep semicircle tolerance > produces no NaN coordinates for a semicircle [0.10ms]
+(pass) generateArcFromSweep semicircle tolerance > still returns a flat chord when the radius is genuinely too small [0.04ms]
+(pass) generateArcFromSweep semicircle tolerance > still returns a flat chord for a zero-length path [0.02ms]
+(pass) expandEasyEdaPathData on a semicircle circle > expands the two semicircles into a closed route [0.13ms]
+(pass) expandEasyEdaPathData on a semicircle circle > closes back onto the start point [0.03ms]
+(pass) expandEasyEdaPathData on a semicircle circle > the expanded circle is 1.17mm wide with a 0.5846mm radius [0.06ms]
+
+tests/c37616412-fabrication-outline.test.ts:
+(pass) renders the imported C37616412 footprint on a one-connector PCB [317.14ms]
+
+tests/internally-connected-pins-tsx.test.ts:
+(pass) converter emits permanent pin groups for C318884 and preserves caller overrides [4355.24ms]
+
+tests/bounded-arc-generation.test.ts:
+(pass) bounds a large arc before allocating its natural sampling grid [1.60ms]
+(pass) directly selects the same vertices as full generation followed by downsampling [0.13ms]
+(pass) expands a huge SOLIDREGION arc without creating an enormous temporary array [0.15ms]
+(pass) validates non-finite computed arc geometry before generation [0.14ms]
+
+tests/get-board-outline-polygons.test.ts:
+(pass) joins unordered reversed tracks and removes notch edge tabs [0.89ms]
+(pass) keeps disconnected closed outlines separate [0.21ms]
+(pass) does not invent a cutout from a line or an ambiguous open path [0.11ms]
+(pass) ignores branched outlines without losing a separate closed loop [0.24ms]
+
+tests/generate-footprint-tsx.test.ts:
+(pass) generates standalone oval holes [268.02ms]
+(pass) preserves fabrication and user notes in generated footprints [16.65ms]
+
+tests/fetch-tests/c2040.test.ts:
+(pass) should fetch correct part for C2040 [4252.54ms]
+
+tests/fetch-tests/invalid-search-response.test.ts:
+(pass) rejects null response before fetching geometry [1.35ms]
+(pass) rejects missing success flag before fetching geometry [0.24ms]
+(pass) rejects string success flag before fetching geometry [0.05ms]
+(pass) rejects missing results before fetching geometry [0.19ms]
+(pass) rejects missing lists before fetching geometry [0.04ms]
+(pass) rejects non-array component list before fetching geometry [0.07ms]
+(pass) rejects component without a UUID before fetching geometry [0.15ms]
+(pass) rejects API rejection even with a nonempty result list before fetching geometry [0.12ms]
+
+tests/fetch-tests/missing-library-component.test.ts:
+(pass) reports when S4 has no EasyEDA library search result [0.92ms]
+(pass) reports when EasyEDA rejects the search request [0.08ms]
+
+tests/fetch-tests/c41430893.test.ts:
+(pass) should fetch correct part for C41430893 [1815.28ms]
+(pass) C41430893 should generate Circuit Json without errors [5733.41ms]
+
+tests/fetch-tests/rate-limit-403.test.ts:
+(pass) surfaces a search-request HTTP 403 as rate limiting, not a component lookup failure [0.32ms]
+(pass) surfaces a component-details HTTP 403 as rate limiting [0.48ms]
+(pass) keeps 'Component not found' distinct from rate limiting [0.16ms]
+(pass) includes the HTTP status in non-403 search failures [0.14ms]
+
+tests/fetch-tests/exact-search-response.test.ts:
+(pass) preserves exact matching through supplier parameter [0.67ms]
+(pass) preserves exact matching through lcsc number [0.16ms]
+(pass) preserves exact matching through szlcsc number [0.71ms]
+
+tests/fetch-tests/c1555-0402-repro.test.ts:
+(pass) rejects C1555 when EasyEDA only returns fuzzy value matches [0.35ms]
+(pass) snapshots the misleading C1555 search candidate [212.78ms]
+
+tests/convert-to-ts/C393941-to-ts.test.ts:
+(pass) should convert C393941 into typescript file [7717.46ms]
+
+tests/convert-to-ts/C3178291-to-ts.test.ts:
+(pass) should convert C3178291 into typescript file [2721.84ms]
+
+tests/convert-to-ts/C51950748-to-ts.test.ts:
+(pass) should convert C51950748 into typescript file [3263.32ms]
+
+tests/convert-to-ts/C19795120-to-ts.test.ts:
+(pass) should convert C19795120 into typescript file [6056.69ms]
+
+tests/convert-to-ts/crystal-category.test.ts:
+(pass) distinguishes passive crystal categories from active oscillators [1.50ms]
+
+tests/convert-to-ts/c87216-inductor-import-repro.test.ts:
+(pass) converts C87216 L0603 to a native inductor [2348.92ms]
+
+tests/convert-to-ts/C62857-to-ts.test.ts:
+(pass) converts C62857 capacitor array with its EasyEDA symbol [2127.24ms]
+
+tests/convert-to-ts/C131337-to-ts.test.ts:
+(pass) should convert C131337 into typescript file [2727.98ms]
+
+tests/convert-to-ts/C410353-to-ts.test.ts:
+(pass) should convert C410353 into typescript file [2773.89ms]
+
+tests/convert-to-ts/dimensional-resistor-to-ts.test.ts:
+(pass) preserves resistance for C6460576's dimensional package name [2526.73ms]
+(pass) does not turn a multi-pin dimensional resistor package into a two-pin resistor [4.46ms]
+
+tests/convert-to-ts/C9972-to-ts.test.ts:
+(pass) preserves the exact C9972 manufacturer part number [7.53ms]
+(pass) reports missing manufacturer part number metadata [5.08ms]
+
+tests/convert-to-ts/hidden-reference-label.test.ts:
+(pass) creates a visible reference label when the source reference is hidden [4719.14ms]
+
+tests/convert-to-ts/C2879827-to-ts.test.ts:
+(pass) C2879827 preserves the source notch geometry during parsing [0.19ms]
+(pass) C2879827 converts BoardOutline tracks into one cutout [3.36ms]
+(pass) C2879827 preserves the board cutout in generated component TSX [1745.97ms]
+(pass) C2879827 must retain its board notch as cutout geometry [2.03ms]
+(pass) TSX generator must preserve an existing pcb_cutout [0.14ms]
+
+tests/convert-to-ts/C2998002-to-ts.test.ts:
+(pass) should convert C2998002 into typescript file [2089.33ms]
+
+tests/convert-to-ts/C2848306-to-ts.test.ts:
+(pass) should convert C2848306 into typescript file [2656.27ms]
+
+tests/convert-to-ts/c609652-pin-label.test.ts:
+(pass) preserves C609652's PA0/RESET#/UPDI label on pin 16 [2566.75ms]
+(pass) connects C609652 pin 16 using PA0 [1969.42ms]
+(pass) connects C609652 pin 16 using N_RESET [1825.08ms]
+(pass) connects C609652 pin 16 using UPDI [2762.22ms]
+
+tests/convert-to-ts/C20526-to-ts.test.ts:
+(pass) repro: converts C20526 with a schematic snapshot [1989.71ms]
+
+tests/convert-to-ts/C139797-to-ts.test.ts:
+(pass) should convert C139797 tactile switch into a pushbutton component [2422.71ms]
+
+tests/convert-to-ts/C60708-to-ts.test.ts:
+(pass) should convert C60708 into typescript file [2369.54ms]
+
+tests/convert-to-ts/current-sense-resistor-to-ts.test.ts:
+(pass) preserves the resistance of a current-sense resistor with a U? prefix [2224.24ms]
+
+tests/convert-to-ts/C46497-to-ts.test.ts:
+(pass) should convert C46497 into typescript file [3307.57ms]
+
+tests/convert-to-ts/C2828420-to-ts.test.ts:
+(pass) should convert C2828420 diode with metadata-derived pin labels [2181.44ms]
+
+tests/convert-to-ts/C8465-to-ts.test.ts:
+(pass) should convert C8465 into typescript file [1887.34ms]
+
+tests/convert-to-ts/C2687116-to-ts.test.ts:
+(pass) infers VBUS power metadata for C2687116 [1957.27ms]
+
+tests/convert-to-ts/C70593-four-pin-crystal-symbol-repro.test.ts:
+(pass) C70593 imports as a native four-pin crystal [2190.16ms]
+
+tests/convert-to-ts/C90683-to-ts.test.ts:
+(pass) renders all NN2-24S05C3N schematic pin labels [1979.69ms]
+
+tests/convert-to-ts/c2848306-hidden-pin-visibility.test.ts:
+(pass) preserves C2848306 EasyEDA-hidden EP pin visibility [2635.36ms]
+
+tests/convert-to-ts/C7203002-to-ts.test.ts:
+(pass) should convert C7203002 into typescript file [2458.36ms]
+
+tests/convert-to-ts/C5248081-to-ts.test.ts:
+(pass) should convert C5248081 into typescript file [3990.75ms]
+
+tests/convert-to-ts/C57759-to-ts.test.ts:
+(pass) should convert diode category components to diode elements [1864.01ms]
+
+tests/convert-to-ts/C19943592-pin1-footprint-repro.test.ts:
+(pass) renders the C19943592 pin 1 rectangular footprint pad [2402.79ms]
+(pass) preserves RECT pad dimensions and rotation: {"width":60,"height":60,"rotation":0} [11.01ms]
+(pass) preserves RECT pad dimensions and rotation: {"width":60,"height":72,"rotation":45} [8.81ms]
+(pass) preserves RECT pad dimensions and rotation: {"width":72,"height":60,"rotation":90} [9.06ms]
+
+tests/convert-to-ts/C157947-to-ts.test.ts:
+(pass) should convert C157947 into typescript file [8971.15ms]
+
+tests/convert-to-ts/package-rect-field-order-and-stroke-units.test.ts:
+(pass) preserves package RECT layer and line-width fields with correct stroke units [2931.77ms]
+
+tests/convert-to-ts/C5240853-nc-ground-repro.test.ts:
+(pass) does not turn ambiguous NC labels into a prohibition on connection [0.11ms]
+(pass) preserves INA241A2 pin 4 and explicit datasheet semantics without changing the component geometry [119.27ms]
+
+tests/convert-to-ts/c105188-reference-label-repro.test.ts:
+(pass) C105188 custom symbols display their instance reference labels [1786.46ms]
+
+tests/convert-to-ts/pushbutton-category.test.ts:
+(pass) should identify JLCPCB pushbutton metadata as pushbuttons [0.08ms]
+(pass) should identify JLCPCB switch metadata as switches [0.04ms]
+(pass) should convert JLCPCB pushbutton metadata to pushbutton elements [1836.88ms]
+
+tests/convert-to-ts/C113367-to-ts.test.ts:
+(pass) should convert C113367 into typescript file [2559.67ms]
+(pass) C113367 generates one schematic port for each footprint pin [1995.82ms]
+
+tests/convert-to-ts/C488251-pcb-view-repro.test.ts:
+(pass) renders the C488251 PCB view [1898.75ms]
+
+tests/convert-to-ts/C128415-to-ts.test.ts:
+(pass) should convert C128415 into typescript file [3741.57ms]
+
+tests/convert-to-ts/smd-resistors-to-ts.test.ts:
+(pass) converts C17168 R0402 to a resistor [2227.43ms]
+(pass) converts C11702 R0402 to a resistor [2167.00ms]
+(pass) converts C25744 R0402 to a resistor [2737.62ms]
+(pass) converts C2929994 R0402 to a resistor [1754.06ms]
+(pass) converts C107701 R0603 to a resistor [2173.57ms]
+(pass) uses the native schematic symbol for an imported C107701 resistor [2861.60ms]
+
+tests/convert-to-ts/C221539-import.test.ts:
+(pass) renders C221539's schematic and footprint [3009.42ms]
+(pass) preserves C221539's three terminals and physical pin 2 in a chip box [2169.24ms]
+(pass) preserves the explicit 1.5 mm slots on all C221539 pads [1832.24ms]
+
+tests/convert-to-ts/C1046-to-ts-with-stepModel.test.ts:
+(pass) should include both obj and step cad model urls [2192.76ms]
+
+tests/convert-to-ts/C23689428-to-ts.test.ts:
+(pass) should convert C23689428 into typescript file [3879.64ms]
+
+tests/convert-to-ts/C1525-to-ts.test.ts:
+(pass) normalizes the U+00B5 micro symbol [1856.60ms]
+(pass) normalizes the U+03BC micro symbol [2235.56ms]
+(pass) converts C1525 to a capacitor with its exact footprint [2026.36ms]
+(pass) uses the native schematic symbol for an imported C1525 capacitor [1866.42ms]
+(pass) preserves imported capacitor polarity with the native symbol [2249.51ms]
+
+tests/convert-to-ts/C105419-to-ts.test.ts:
+(pass) should convert C105419 into typescript file [3103.34ms]
+
+tests/convert-to-ts/C22446580.test.ts:
+(pass) should convert C22446580 into typescript file [2826.06ms]
+
+tests/convert-to-ts/C388883-to-ts.test.ts:
+(pass) preserves distinct C388883 terminals with encoded prime labels [2196.71ms]
+
+tests/convert-to-ts/C88224-to-ts.test.ts:
+(pass) should convert C88224 into typescript file [3302.89ms]
+
+tests/convert-to-ts/l0805-inductors-detected-as-chips.test.ts:
+(pass) converts C1046 L0805 to a native inductor [2802.79ms]
+(pass) converts C281113 L0805 to a native inductor [2609.34ms]
+
+tests/convert-to-ts/C281113-to-ts.test.ts:
+(pass) should convert C281113 into typescript file [3075.21ms]
+
+tests/convert-to-ts/c15127-reference-label-repro.test.ts:
+(pass) C15127 custom symbols display their instance reference labels [2867.26ms]
+
+tests/convert-to-ts/C265111-to-ts.test.ts:
+(pass) should convert C265111 into typescript file [2307.74ms]
+
+tests/convert-to-ts/C12084-to-ts.test.ts:
+(pass) should convert C12084 into typescript file [2461.26ms]
+
+tests/convert-to-ts/C2652953-to-ts.test.ts:
+(pass) should convert C2652953 into typescript file [3485.65ms]
+
+tests/convert-to-ts/C75749-to-ts.test.ts:
+(pass) should convert C75749 into typescript file [4475.15ms]
+
+tests/convert-to-ts/C2979182-to-ts.test.ts:
+(pass) should convert C2979182 / MY-18650-02 into typescript file [3207.47ms]
+
+tests/convert-to-ts/C7519-schematic-view-repro.test.ts:
+(pass) renders C7519 with a white body and visible protection diodes [2790.39ms]
+
+tests/convert-to-ts/c20917-reference-label-repro.test.ts:
+(pass) C20917 custom symbols display their instance reference labels [2793.72ms]
+
+tests/convert-to-ts/C333876-regulator-output-repro.test.ts:
+(pass) does not infer a rail-named VDD pin as a power input for C333876 [2376.66ms]
+
+tests/convert-to-ts/C2040-to-ts.test.ts:
+(pass) should convert C2040 into typescript file [3534.66ms]
+
+tests/convert-to-ts/C561765-to-ts.test.ts:
+(pass) should convert C561765 into typescript file [2555.53ms]
+
+tests/convert-to-ts/additional-payload-variants.test.ts:
+(pass) renders a payload with issue #464 variants [1941.12ms]
+
+tests/convert-to-ts/C136720-to-ts.test.ts:
+(pass) converts C136720 document-layer tracks to fabrication notes [95.07ms]
+(pass) should convert C136720 slide switch as a chip box with all pin labels [3262.24ms]
+
+tests/convert-to-ts/C5830143-to-ts.test.ts:
+(pass) should convert C5830143 into typescript file [2219.36ms]
+
+tests/convert-to-ts/C6186-to-ts.test.ts:
+(pass) should convert C6186 into typescript file [2566.69ms]
+
+tests/convert-to-ts/C2886621-to-ts.test.ts:
+(pass) should convert C2886621 into typescript file [3921.16ms]
+
+tests/convert-to-ts/C2961147-to-ts.test.ts:
+(pass) should convert C2961147 into typescript file [3395.83ms]
+
+tests/convert-to-ts/C490691-to-ts.test.ts:
+(pass) should convert C490691 into typescript file [2864.37ms]
+
+tests/convert-to-ts/c82173-to-ts.test.ts:
+(pass) generates the C82173 LED driver IC as a chip [6.54ms]
+
+tests/convert-to-ts/C165948-to-ts.test.ts:
+(pass) should convert C165948 into typescript file [2886.68ms]
+
+tests/convert-to-ts/C14877.test.ts:
+(pass) should convert atmega328p into typescript file [3292.45ms]
+
+tests/convert-to-ts/C404969-to-ts.test.ts:
+(pass) converts C404969 to a connector [2722.72ms]
+
+tests/convert-to-ts/c2943786-to-ts.test.ts:
+(pass) should import C2943786 into a snapshotted typescript component [9272.92ms]
+
+tests/convert-to-ts/infer-pin-attributes.test.ts:
+(pass) infers only unambiguous IC power and ground attributes [0.38ms]
+
+tests/convert-to-ts/C82650-to-ts.test.ts:
+(pass) converts C82650 LED display driver into a chip [3354.99ms]
+
+tests/convert-to-ts/c41413180-filled-fabrication-notes.test.ts:
+(pass) C41413180 filled fabrication symbols survive generated TSX rendering [2211.05ms]
+
+tests/convert-to-ts/C2941005-to-ts.test.ts:
+(pass) renders the C2941005 schematic and PCB [1916.22ms]
+(pass) preserves all six C2941005 schematic terminals and their PCB pad mappings [1707.02ms]
+
+tests/convert-to-ts/c165948-multiple-pin-aliases.test.ts:
+(pass) preserves all C165948 pin aliases in generated TSX [2256.50ms]
+
+tests/convert-to-ts/C5378731-to-ts.test.ts:
+(pass) emits the C5378731 non-plated through-hole slot as a pcb_cutout [6.52ms]
+(pass) imports C5378731 supplier fabrication notes into its footprint string [2904.08ms]
+
+tests/convert-to-ts/C2041570-to-ts.test.ts:
+(pass) converts C2041570 to an inductor [2315.64ms]
+
+tests/convert-to-ts/C2765186-to-ts.test.ts:
+(pass) prefers schematic pin names over footprint pad identifiers [2254.15ms]
+
+tests/convert-to-ts/C158012-to-ts.test.ts:
+(pass) should convert C158012 into typescript file [2607.96ms]
+
+tests/convert-to-ts/C1046-to-ts.test.ts:
+(pass) should convert C1046 into typescript file [3302.29ms]
+
+tests/convert-to-ts/c472489-slash-separated-pin-label.test.ts:
+(pass) preserves C472489 slash-separated pin 20 label [3835.14ms]
+
+tests/convert-to-ts/C157929-to-ts.test.ts:
+(pass) should convert C157929 into typescript file [2624.22ms]
+
+tests/convert-to-ts/C2838502-to-ts.test.ts:
+(pass) should convert C2838502 into typescript file [3961.34ms]
+
+tests/convert-to-ts/C113367-overlapping-pin-labels.test.ts:
+(pass) reproduces overlapping pin labels in the C113367 custom symbol [1938.18ms]
+
+tests/convert-to-ts/C19076967-to-ts.test.ts:
+(pass) should convert C19076967 into typescript file [2447.91ms]
+
+tests/convert-to-ts/standard-dip-switches-repro.test.ts:
+(pass) preserves all Standard DIP switch terminals in a chip box [1766.55ms]
+
+tests/convert-to-ts/C15464-to-ts.test.ts:
+(pass) normalizes C15464 active-low pin aliases [2501.05ms]
+
+tests/convert-to-ts/C2913206-to-ts.test.ts:
+(pass) should convert C2913206 into typescript file [2554.06ms]
+
+tests/convert-to-ts/C472489-to-ts.test.ts:
+(pass) should convert C472489 into typescript file [4926.47ms]
+
+tests/convert-to-ts/C335982-polarized-capacitor-repro.test.ts:
+(pass) preserves C335982's curved polarized capacitor plate [2030.66ms]
+
+tests/convert-to-ts/C3273487-to-ts.test.ts:
+(pass) converts C3273487 coupled inductor without losing terminals [2585.50ms]
+
+tests/convert-to-ts/C22446580-to-ts.test.ts:
+(pass) should convert C22446580 into typescript file [2298.70ms]
+
+tests/convert-to-ts/C1985372-to-ts.test.ts:
+(pass) keeps C1985372 on tscircuit's schematic grid [2325.40ms]
+
+tests/convert-to-ts/c94934-reference-label-repro.test.ts:
+(pass) C94934 preserves GND text and displays instance reference labels [1601.45ms]
+
+tests/convert-to-ts/C96225-to-ts.test.ts:
+(pass) converts C96225 diode array into a six-pin chip [2630.22ms]
+
+tests/convert-to-ts/C2055640-to-ts.test.ts:
+(pass) C2055640 should preserve courtyard outlines when round-tripping through TSX [2611.52ms]
+(pass) repro: C2055640 should preserve circular EasyEDA BGA pads [151.85ms]
+
+tests/convert-to-ts/C5346074-crystal-symbol-repro.test.ts:
+(pass) C5346074 imports as a native crystal component [1450.30ms]
+
+tests/convert-to-ts/C49234237-to-ts.test.ts:
+(pass) converts C49234237 into a pushbutton component [2302.90ms]
+
+tests/convert-to-ts/existing-dynamic-reference-label.test.ts:
+(pass) does not duplicate an existing {NAME} reference label [2158.27ms]
+(pass) does not duplicate an existing {REF} reference label [1758.03ms]
+(pass) does not duplicate an existing {REFERENCE} reference label [2175.09ms]
+
+tests/convert-to-ts/special-character-pin-labels.test.ts:
+(pass) preserves C472489 special-character pin labels [2145.43ms]
+(pass) preserves C14877 special-character pin labels [2140.92ms]
+(pass) preserves C2886621 special-character pin labels [2388.66ms]
+
+tests/convert-to-ts/C490691-active-low-labels.test.ts:
+(pass) preserves C490691 trailing-hash active-low pin names [2072.28ms]
+
+tests/convert-to-ts/C501008-mosfet-symbol-repro.test.ts:
+(pass) repro: C501008 STL130N6F7 MOSFET renders as an eight-pin chip [1839.12ms]
+
+tests/convert-to-ts/C57759-to-led.test.ts:
+(pass) should convert led category components to led elements [1892.12ms]
+
+tests/convert-to-ts/cap1188-pin-number-repro.test.ts:
+(pass) CAP1188 supplier GND uses SPICE number 23 and physical/display number 25 [0.19ms]
+(pass) maps CAP1188 GND to physical pad 25 rather than SPICE pin 23 [0.01ms]
+(pass) CAP1188 conversion preserves GND on pad 25: generated TSX and schematic [2328.20ms]
+
+tests/convert-to-ts/C309274-to-ts.test.ts:
+(pass) should convert C309274 into typescript file [3318.04ms]
+
+tests/convert-to-ts/C18185602-to-ts.test.ts:
+(pass) should convert C18185602 into typescript file [2647.51ms]
+
+tests/convert-to-ts/switch-category.test.ts:
+(pass) does not treat Power Distribution Switches as a mechanical switch [0.76ms]
+(pass) does not treat Power-Distribution Switch as a mechanical switch [0.20ms]
+(pass) does not treat PMIC - Power Distribution Switches, Load Drivers as a mechanical switch
+(pass) does not treat Load Switches as a mechanical switch
+(pass) does not treat LOAD-SWITCH as a mechanical switch
+(pass) does not treat Analog Switches / Multiplexers as a mechanical switch
+(pass) does not treat Analog-Switch as a mechanical switch
+(pass) does not treat Switching Diodes as a mechanical switch
+(pass) does not treat Switch ICs as a mechanical switch
+(pass) retains mechanical Slide Switches categories [0.06ms]
+(pass) retains mechanical Toggle Switches categories
+(pass) retains mechanical DIP Switches categories
+(pass) retains mechanical Key Switches categories
+(pass) retains mechanical Micro Switches categories
+(pass) retains mechanical Limit Switches categories
+(pass) retains mechanical Power Toggle Switches categories [0.04ms]
+(pass) ignores absent and non-string categories [0.03ms]
+(pass) semiconductor tags override a generic switch category [5.00ms]
+(pass) semiconductor category metadata overrides generic switch tags [2.89ms]
+(pass) semiconductor Category metadata overrides generic switch tags [2.53ms]
+(pass) semiconductor LCSC Category metadata overrides generic switch tags [2.32ms]
+(pass) semiconductor JLCPCB Category metadata overrides generic switch tags [2.25ms]
+(pass) a semiconductor top-level category overrides generic switch tags [2.56ms]
+
+tests/convert-to-ts/source-reference-label.test.ts:
+(pass) reuses the source reference annotation with each instance's name [2384.39ms]
+
+tests/convert-to-ts/C7434162-pin-labels-repro.test.ts:
+(pass) renders C7434162 pin 35 and 36 labels [1798.33ms]
+
+tests/convert-to-ts/C9900017879-to-ts.test.ts:
+(pass) should convert C9900017879 into typescript file [4048.74ms]
+
+tests/convert-to-ts/C478081-power-pin-suffix-repro.test.ts:
+(pass) reproduces missing power metadata on suffixed VDD pins for C478081 [2188.78ms]
+
+tests/convert-to-ts/C284163-to-ts.test.ts:
+(pass) converts C284163 to a four-pin crystal [4.34ms]
+
+tests/convert-to-ts/C8598-to-ts.test.ts:
+(pass) should normalize decorated C8598 diode polarity labels [2666.33ms]
+
+tests/convert-to-ts/C14877-to-ts.test.ts:
+(pass) should convert C14877 into typescript file [3810.67ms]
+
+tests/convert-to-ts/C8545-to-ts.test.ts:
+(pass) repro: imports C8545 with its custom schematic symbol [2242.32ms]
+
+tests/convert-to-ts/C46749-to-ts.test.ts:
+(pass) should convert C46749 into typescript file [3161.03ms]
+
+tests/convert-to-ts/C160354-to-ts.test.ts:
+(pass) should convert C160354 into typescript file [2209.50ms]
+
+tests/convert-to-ts/C55266-power-distribution-switch.test.ts:
+(pass) C55266 retains six source pins and their PCB pad mappings [1561.80ms]
+(pass) renders the C55266 schematic and PCB [2089.56ms]
+(pass) C55266 exposes all six IC pins in the schematic [1581.74ms]
+(pass) connects C55266's IN signal [1637.01ms]
+(pass) connects C55266's GND signal [2470.64ms]
+(pass) connects C55266's EN signal [1392.76ms]
+(pass) connects C55266's FAULT signal [1404.31ms]
+(pass) connects C55266's ILIM signal [2075.63ms]
+(pass) connects C55266's OUT signal [2260.13ms]
+
+tests/parse-tests/parse-c4355039.test.ts:
+(pass) should parse easyeda json for a c4355039 [2.95ms]
+
+tests/parse-tests/parse-c124375.test.ts:
+(pass) should parse easyeda json for a c124375 [2.56ms]
+
+tests/parse-tests/parse-555-timer-json.test.ts:
+(pass) should parse easyeda json for a 555 timer [6.20ms]
+
+tests/parse-tests/rk3566-import-regression.test.ts:
+(pass) parses footprint-only parts with incomplete schematic metadata [3.34ms]
+(pass) preserves exponent-like BGA pad identifiers and generates unique ports [3.03ms]
+(pass) keeps ordinary decimal pad identifiers numeric [0.31ms]
+
+tests/parse-tests/parse-c124352.test.ts:
+(pass) should parse easyeda json for a C124352 [3.01ms]
+
+tests/parse-tests/parse-usb-c.test.ts:
+(pass) should parse easyeda json for a mounted usb c plug [8.87ms]
+
+tests/parse-tests/parse-esp32.test.ts:
+(pass) should parse easyeda json for a 555 timer [17.23ms]
+
+tests/parse-tests/malformed-schema-variants.test.ts:
+(pass) coerces a numeric-string szlcsc id [3.48ms]
+(pass) accepts an absent dataStr.head.utime value (%s) [4.24ms]
+(pass) accepts an absent dataStr.head.utime value (%s) [5.38ms]
+(pass) accepts an absent dataStr.head.utime value () [5.36ms]
+(pass) normalizes prefix-marked text to legacy left alignment [6.93ms]
+(pass) normalizes additional payload variants from issue #464 [3.51ms]
+
+tests/parse-tests/pin-label-plus-minus.test.ts:
+(pass) converts trailing plus and minus in pin labels [0.10ms]
+(pass) normalizes voltage pin labels with leading plus [0.05ms]
+
+tests/parse-tests/parse-c46497.test.ts:
+(pass) should parse easyeda json for C46497 with VIA [11.22ms]
+
+tests/parse-tests/physical-pin-number.test.ts:
+(pass) uses physical pin "25" with number visibility 1 [0.28ms]
+(pass) uses physical pin "25" with number visibility 0 [0.02ms]
+(pass) uses physical pin " 25 " with number visibility 1 [0.01ms]
+(pass) uses physical pin "0" with number visibility 1
+(pass) uses physical pin "A1" with number visibility 1 [0.02ms]
+(pass) uses physical pin "B12" with number visibility 0
+(pass) falls back to SPICE number when physical number is undefined [0.13ms]
+(pass) falls back to SPICE number when physical number is "" [0.02ms]
+(pass) falls back to SPICE number when physical number is "  " [0.02ms]
+(pass) falls back to SPICE number when physical number is "undefined" [0.20ms]
+(pass) falls back to SPICE number when physical number is "null" [0.03ms]
+
+tests/parse-tests/pin-label-hash.test.ts:
+(pass) converts trailing # in pin labels to active-low N_ prefix [0.11ms]
+
+tests/parse-tests/single-letter-shape-schema.test.ts:
+(pass) parses examples for single letter shape schema [1.09ms]
+(pass) normalizes literal undefined optional text fields from EasyEDA text shapes [0.86ms]
+(pass) normalizes whitespace-only text metadata from C60708 [1.07ms]
+(pass) still rejects unexpected fontStyle values [0.42ms]
+(pass) parses schematic drawing colors, paths, and pin stems [0.47ms]
+
+tests/convert-to-soup-tests/C265111.test.ts:
+(pass) C265111 (JST SM08B-GHS-TB) should generate Circuit JSON without errors [352.49ms]
+
+tests/convert-to-soup-tests/C157929.test.ts:
+(pass) C157929 (JST B3B-XH-A) should generate Circuit JSON without errors [204.86ms]
+
+tests/convert-to-soup-tests/c88224.test.ts:
+(pass) should parse easyeda json for a c88224 and convert to tscircuit soup [79.37ms]
+
+tests/convert-to-soup-tests/bottom-layer-track.test.ts:
+(pass) preserves the side of bottom-layer tracks [162.62ms]
+
+tests/convert-to-soup-tests/c46497.test.ts:
+(pass) C46497 should generate Circuit Json with vias [129.75ms]
+
+tests/convert-to-soup-tests/plated-hole-drill-dimensions.test.ts:
+(pass) preserves explicit slot lengths and local axes at different pad rotations [98.17ms]
+(pass) keeps circular drills circular inside elongated copper pads [4.49ms]
+
+tests/convert-to-soup-tests/C160354.test.ts:
+(pass) C160354 (JST B4B-PH-SM4-TB) should generate Circuit JSON without errors [85.69ms]
+
+tests/convert-to-soup-tests/convert-usb-c-to-soup.test.ts:
+(pass) should convert a usb-c footprint (C2765186) to tscircuit soup json [136.62ms]
+
+tests/convert-to-soup-tests/C8465.test.ts:
+(pass) C8465 (JST B2B-EH-A) should generate Circuit JSON without errors [86.02ms]
+
+tests/convert-to-soup-tests/c57759.test.ts:
+(pass) C57759 should generate Circuit Json without errors [134.83ms]
+(pass) C57759 should parse PT shape correctly [3.33ms]
+
+tests/convert-to-soup-tests/diode-polarity-port-hints.test.ts:
+(pass) preserves normalized diode polarity hints on PCB pads [12.54ms]
+
+tests/convert-to-soup-tests/bottom-layer-arc.test.ts:
+(pass) preserves the side of bottom-layer arcs [98.90ms]
+
+tests/convert-to-soup-tests/c19795120-no-duplicate-cutout.test.ts:
+(pass) C19795120 should generate a mounting hole without a duplicate cutout [82.60ms]
+
+tests/convert-to-soup-tests/c2055640-courtyard.test.ts:
+(pass) C2055640 should import courtyard outlines with non-zero height and render them [220.79ms]
+
+tests/convert-to-soup-tests/normalize-plus-minus.test.ts:
+(pass) normalizes plus and minus symbols in pin names during conversion [57.68ms]
+(pass) normalizes plus and minus symbols in package detail silkscreen text during conversion [28.91ms]
+
+tests/convert-to-soup-tests/silkscreen-text-rotation.test.ts:
+(pass) preserves rotated silkscreen text in the PCB snapshot [25.02ms]
+
+tests/convert-to-soup-tests/fallback-courtyard-model-outline.test.ts:
+(pass) uses the FS3000 physical body for its fallback courtyard [15.64ms]
+(pass) excludes the VCNL4040 silkscreen marker from its fallback courtyard [4.40ms]
+
+tests/convert-to-soup-tests/duplicate-pad-numbers.test.ts:
+(pass) keeps repeated EasyEDA pad numbers on one logical pin [60.43ms]
+
+tests/convert-to-soup-tests/c4355039-to-soup.test.ts:
+(pass) should parse easyeda json for c4355039 and convert to tscircuit soup [232.42ms]
+
+tests/convert-to-soup-tests/c3178291-to-soup.test.ts:
+(pass) should convert c3178291 with polygon pads [152.61ms]
+
+tests/convert-to-soup-tests/c41413180-fabrication-notes.test.ts:
+(pass) C41413180 solid fabrication symbols keep their filled geometry without an outline [73.26ms]
+(pass) document TRACK notes retain the supplier's explicit stroke width [13.61ms]
+
+tests/convert-to-soup-tests/c165948-cad-footprint-size-repro.test.ts:
+(pass) uses C165948 CAD model bounds instead of its PCB footprint size [4905.24ms]
+
+tests/convert-to-soup-tests/convert-easyeda-to-tscircuit-soup.test.ts:
+(pass) should parse easyeda json for a 555 timer and convert to tscircuit soup [108.15ms]
+
+tests/convert-to-soup-tests/C158012.test.ts:
+(pass) C158012 (JST B2B-XH-A) should generate Circuit JSON without errors [44.79ms]
+
+tests/convert-to-soup-tests/decorative-solidregion-import.test.ts:
+(pass) reference footprint retains pads and supported fabrication artwork [6.71ms]
+(pass) preserves decorative Bezier artwork without warning or dropping geometry [39.75ms]
+(pass) preserves a curved physical NPTH on layer %s [4.02ms]
+(pass) preserves a curved physical NPTH on layer %s [3.07ms]
+(pass) warns and skips unsupported decorative geometry: M 3992 3000 L 3994 [5.22ms]
+(pass) warns and skips unsupported decorative geometry: M 3992 3000 L 3994 3000 Z M 3993 3001 L 3994 3001 Z [4.86ms]
+(pass) propagates unexpected errors instead of reporting them as unsupported artwork [2.14ms]
+(pass) still rejects malformed physical NPTH geometry [1.76ms]
+(pass) warns and skips over-budget decorative artwork without changing the footprint [6.75ms]
+(pass) still rejects an over-budget physical NPTH on layer %s [2.85ms]
+(pass) still rejects an over-budget physical NPTH on layer %s [2.98ms]
+(pass) warns and skips invalid generated artwork coordinates: M 1e308 0 c 1e308 0 1e308 1 1e308 0 Z [6.72ms]
+(pass) warns and skips invalid generated artwork coordinates: M 1e308 0 h 1e308 Z [8.03ms]
+(pass) warns and skips invalid generated artwork coordinates: M 0 0 A 1e308 1e308 0 0 1 2 0 Z [11.05ms]
+
+tests/convert-to-soup-tests/esp32-to-soup.test.ts:
+(pass) should parse easyeda json for a 555 timer (smd) and convert to tscircuit soup [126.58ms]
+
+tests/convert-to-soup-tests/plated-hole-layers.test.ts:
+(pass) through-hole pads span both outer copper layers [20.06ms]
+
+tests/convert-to-soup-tests/C131337.test.ts:
+(pass) C131337 (JST B2B-PH-K-S) should generate Circuit JSON without errors [114.05ms]
+
+tests/convert-to-soup-tests/c2848306-to-soup.test.ts:
+(pass) C2848306 should parse successfully with 'none' visibility enum [8.39ms]
+
+tests/convert-to-soup-tests/c5184526.test.ts:
+(pass) C5184526 should have two holes [121.12ms]
+
+tests/convert-to-soup-tests/c410353-curved-artwork.test.ts:
+(pass) preserves captured C410353 curved artwork through Circuit JSON and generated TSX [93.75ms]
+
+ 508 pass
+ 0 fail
+ 81 snapshots, 4427 expect() calls
+Ran 508 tests across 200 files. [431.53s]

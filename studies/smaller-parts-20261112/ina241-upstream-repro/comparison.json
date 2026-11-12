@@ -1,0 +1,43 @@
+{
+  "before_pin4": {
+    "type": "source_port",
+    "source_port_id": "source_port_3",
+    "name": "NC",
+    "pin_number": 4,
+    "port_hints": [
+      "NC",
+      "pin4",
+      "4"
+    ],
+    "source_component_id": "source_component_0",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "do_not_connect": true
+  },
+  "after_pin4": {
+    "type": "source_port",
+    "source_port_id": "source_port_3",
+    "name": "NC",
+    "pin_number": 4,
+    "port_hints": [
+      "NC",
+      "pin4",
+      "4"
+    ],
+    "source_component_id": "source_component_0",
+    "subcircuit_id": "subcircuit_source_group_0"
+  },
+  "physical_and_schematic_records_unchanged": true,
+  "schematic_svg_identical": false,
+  "pcb_svg_identical": true,
+  "hashes": {
+    "before.circuit.json": "10f5c2f99b656ec8d3f4245341c16d3b8a4a43d3cd9c8284c0da2c243cd26b85",
+    "before.tsx": "67425b9b570fea6be3f3874a31cd0174ca77feb8a089ce25b7395be2faa60d4c",
+    "render.ts": "b9ff07158bc0eb51840ba005b2e4a236d53404322888a94e443c0e4dfc25c170",
+    "after.pcb.svg": "853c503651e99dc2f867f788989662bf861a3f7e46467ac8c19228ca4bdc07a4",
+    "after.circuit.json": "3ca740fa4706c12033e529e674da8a3abfd904ba3ce7e93251d649c6d7b4aea9",
+    "before.pcb.svg": "853c503651e99dc2f867f788989662bf861a3f7e46467ac8c19228ca4bdc07a4",
+    "after.schematic.svg": "21b99cff1caced743558d1d150e9b39cacbf2153ff96f30f00c0ba277d6483af",
+    "before.schematic.svg": "0cf4e324b814ef5ea1a17adc689a30ed1375a813b7970d4dedac566a19c37355",
+    "after.tsx": "5d92d4a6ed5441d8c3b688e61223b7d0e6fae0bfecd49b571d6e8d0c55b0db9e"
+  }
+}
