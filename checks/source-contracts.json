@@ -1,0 +1,10 @@
+{
+  "source_contract_pass": true,
+  "components": 109,
+  "fitted_supplier_components": 101,
+  "bare_pads": 7,
+  "nets": 73,
+  "failures": [],
+  "placement_verified": false,
+  "manufacturing_ready": false
+}

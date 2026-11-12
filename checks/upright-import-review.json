@@ -1,0 +1,23 @@
+{
+  "cli": "0.1.2454",
+  "tscircuit": "0.0.3165",
+  "source": "imports/USB4145_03_0070_C/USB4145_03_0070_C.tsx",
+  "sha256": "f94a118e3e73f17a560d7456b982abddf23244e6a2f3897b05ec952e93af11e5",
+  "round_locator_diameter_mm": 0.7099808,
+  "slot_width_mm": 1.5099792,
+  "slot_height_mm": 0.7099808,
+  "manufacturer_A2_slot_mm": [
+    1.01,
+    0.71
+  ],
+  "manufacturer_dimension_tolerance_mm": 0.05,
+  "slot_oversize_above_maximum_mm": 0.4499792,
+  "pin_contract": "17 imported pins, shell on pin17; all power/GND/CC/D+/D- rewired for upright numbering",
+  "qualification_pass": false,
+  "not_freshly_verified": [
+    "native paste/drill export",
+    "model seating plane",
+    "assembly process",
+    "live stock"
+  ]
+}

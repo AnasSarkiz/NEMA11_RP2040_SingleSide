@@ -1,0 +1,32 @@
+{
+  "project": "AnasSarkiz/NEMA11_RP2040_SingleSide",
+  "created_remotely": false,
+  "pushed": false,
+  "registry_published": false,
+  "source_commit": "c50288a",
+  "native_build_command": "PATH=node_modules/.bin:$PATH XDG_CONFIG_HOME=.config tsci build index.circuit.tsx --pcb-svgs --schematic-svgs",
+  "native_build_exit": 1,
+  "typecheck_exit": 0,
+  "source_contracts_pass": true,
+  "source_pin_contract_pass": true,
+  "native_circuit_json": "dist/index/circuit.json",
+  "native_circuit_json_sha256": "7ef84e3036abcababc1946553b5f7e12de4b92c62d63da77ccb8ee964227a7b1",
+  "all_fitted_top": true,
+  "single_side_fit_verified": false,
+  "manufacturing_ready": false,
+  "native_errors": 172,
+  "native_warnings": 278,
+  "source_components": 109,
+  "fitted_components": 101,
+  "source_nets": 73,
+  "routed_traces": 0,
+  "vias": 0,
+  "blockers": [
+    "194.464942 mm2 courtyard area deficit under provisional rules; new smaller qualified component layout required",
+    "USB locator import still 1.5099792 x 0.7099808 vs archived drawing 1.01 x 0.71 +/-0.05",
+    "USB native bottom shell paste, seating and assembler joint process unqualified",
+    "WAGO bare-stranded AWG24-16 range does not qualify factory AWG26 leads",
+    "172 native placement/clearance errors and 278 warnings",
+    "Mechanical motor rear fasteners/gap/insulation/wire envelope, copper routing/CAM/process/live stock/bench acceptance open"
+  ]
+}

@@ -1,0 +1,133 @@
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/index/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Y" prefix is being used with a <chip />, try using it with a <crystal />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+J_PD has no pin with requires_power=true
+J_PD has no pin with requires_ground=true
+U_PD has no pin with requires_ground=true
+D_TVS has no pin with requires_power=true
+D_TVS has no pin with requires_ground=true
+All pins on D_TVS are underspecified (no pinAttributes set)
+J_DATA has no pin with requires_power=true
+J_DATA has no pin with requires_ground=true
+U_ESD has no pin with requires_power=true
+Y_MCU has no pin with requires_ground=true
+All pins on Y_MCU are underspecified (no pinAttributes set)
+J_MOTOR has no pin with requires_power=true
+J_MOTOR has no pin with requires_ground=true
+All pins on J_MOTOR are underspecified (no pinAttributes set)
+U_IA has no pin with requires_power=true
+U_IB has no pin with requires_power=true
+D_STATUS has no pin with requires_power=true
+D_STATUS has no pin with requires_ground=true
+All pins on D_STATUS are underspecified (no pinAttributes set)
+Q_STATUS_R has no pin with requires_power=true
+Q_STATUS_R has no pin with requires_ground=true
+All pins on Q_STATUS_R are underspecified (no pinAttributes set)
+Q_STATUS_G has no pin with requires_power=true
+Q_STATUS_G has no pin with requires_ground=true
+All pins on Q_STATUS_G are underspecified (no pinAttributes set)
+Q_STATUS_B has no pin with requires_ground=true
+All pins on Q_STATUS_B are underspecified (no pinAttributes set)
+All pins on Q_BUZZER are underspecified (no pinAttributes set)
+schematic_component schematic_component_53 extends outside the drawing area of schematic sheet "04 Stepper motor driver"
+schematic_component schematic_component_54 extends outside the drawing area of schematic sheet "04 Stepper motor driver"
+schematic_component schematic_component_55 extends outside the drawing area of schematic sheet "04 Stepper motor driver"
+schematic_component schematic_component_56 extends outside the drawing area of schematic sheet "04 Stepper motor driver"
+schematic_component schematic_component_57 extends outside the drawing area of schematic sheet "04 Stepper motor driver"
+schematic_component schematic_component_58 extends outside the drawing area of schematic sheet "04 Stepper motor driver"
+schematic_component schematic_component_59 extends outside the drawing area of schematic sheet "04 Stepper motor driver"
+schematic_component schematic_component_60 extends outside the drawing area of schematic sheet "04 Stepper motor driver"
+schematic_component schematic_component_61 extends outside the drawing area of schematic sheet "04 Stepper motor driver"
+schematic_component schematic_component_62 extends outside the drawing area of schematic sheet "04 Stepper motor driver"
+J_PD is inferred to face x- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face y+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+J_DATA is inferred to face x- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face y- so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+D_BUZZER may not have availability from jlcpcb (C478000).
+R_DP may not have availability from jlcpcb (C25100).
+R_DM may not have availability from jlcpcb (C25100).
+R_TEMP_SDA may not have availability from jlcpcb (C25900).
+R_TEMP_SCL may not have availability from jlcpcb (C25900).
+R_USB_SENSE_H may not have availability from jlcpcb (C25741).
+R_USB_SENSE_L may not have availability from jlcpcb (C25741).
+R_VM_H may not have availability from jlcpcb (C25741).
+R_PG may not have availability from jlcpcb (C25804).
+D_PD may not have availability from jlcpcb (C8598).
+Datasheet information for chip "U_TEMP" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.
+Datasheet information for chip "U_IA" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.
+Datasheet information for chip "U_IB" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.
+… 3 more source_no_power_pin_defined_warning not shown
+… 2 more source_no_ground_pin_defined_warning not shown
+… 121 more schematic_element_outside_sheet_warning not shown
+… 91 more source_component_availability_warning not shown
+Component J_MOTOR extends outside board boundaries by 3.5mm. Try moving it 3.5mm left to fit within the board edge.
+Courtyard of J_MOTOR overlaps PCB keepout "unnamed keepout"
+J_PD overlaps U_PD: 9 footprint overlaps, 14 pad clearance violations, 1 courtyard conflict. Move the components apart.
+J_PD overlaps R_PD_CFG: 3 footprint overlaps, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.
+J_PD overlaps R_PD: 3 footprint overlaps, 4 pad clearance violations, 1 courtyard conflict. Move the components apart.
+J_PD overlaps U_BUCK: 2 footprint overlaps, 1 courtyard conflict. Move the components apart.
+J_PD overlaps C_BOOTSTRAP: 4 footprint overlaps, 3 pad clearance violations, 1 courtyard conflict. Move the components apart.
+J_PD overlaps C_BUCK_IN: 4 footprint overlaps, 6 pad clearance violations, 1 courtyard conflict. Move the components apart.
+J_PD overlaps R_BOOT: 2 footprint overlaps, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.
+J_PD overlaps J_MOTOR: 1 footprint overlap, 1 courtyard conflict. Move the components apart.
+D_PD overlaps D_STATUS: 2 footprint overlaps, 4 pad clearance violations, 1 courtyard conflict. Move the components apart.
+J_DATA overlaps D_DATA: 2 footprint overlaps, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+Pads J_PD.DP2 and C_PD.pin2 are too close (clearance: 0.015mm, minimum: 0.15mm)
+Pads J_PD.CC2 and C_PD.pin2 are too close (clearance: 0.015mm, minimum: 0.15mm)
+Pads J_PD.VBUS4 and C_PD.pin1 are too close (clearance: 0.065mm, minimum: 0.15mm)
+Pads J_DATA.CC2 and R_CC2.pin2 are too close (clearance: 0.039mm, minimum: 0.15mm)
+Pads J_DATA.VBUS4 and R_CC2.pin2 are too close (clearance: 0.039mm, minimum: 0.15mm)
+Pads C_IO1.pin2 and C_VM.pin1 are too close (clearance: 0mm, minimum: 0.15mm)
+Pads TP_SWCLK.pin1 and R_SHUNT_A.pin1 are too close (clearance: 0.1mm, minimum: 0.15mm)
+Pads C_VREG.pin1 and C_IA.pin1 are too close (clearance: 0.126mm, minimum: 0.15mm)
+Pads C_VREG.pin1 and C_IA.pin2 are too close (clearance: 0.126mm, minimum: 0.15mm)
+Pads C_VM.pin2 and C_ENCODER_BULK.pin1 are too close (clearance: 0.083mm, minimum: 0.15mm)
+Courtyard of J_PD overlaps with courtyard of C_PD
+Courtyard of J_PD overlaps with courtyard of L_BUCK
+Courtyard of J_PD overlaps with courtyard of R_FLASH_CS
+Courtyard of U_BUCK overlaps with courtyard of J_MOTOR
+Courtyard of C_BUCK_OUT2 overlaps with courtyard of U_DRV
+Courtyard of C_BUCK_OUT2 overlaps with courtyard of J_MOTOR
+Courtyard of C_BUCK_OUT2 overlaps with courtyard of R_IB
+Courtyard of J_DATA overlaps with courtyard of R_CC2
+Courtyard of J_DATA overlaps with courtyard of U_MCU
+Courtyard of R_DM overlaps with courtyard of BZ1
+Test point TP_BOOT is not accessible because it is inside the courtyard of C_BUCK_OUT2
+Test point TP_BOOT is not accessible because it is inside the courtyard of J_MOTOR
+Test point TP_BOOT_GND is not accessible because it is inside the courtyard of C_BUCK_OUT2
+Test point TP_BOOT_GND is not accessible because it is inside the courtyard of J_MOTOR
+Test point TP_3V3 is not accessible because it is inside the courtyard of U_MCU
+Test point TP_GND is not accessible because it is inside the courtyard of U_MCU
+Test point TP_SWCLK is not accessible because it is inside the courtyard of U_MCU
+Test point TP_SWDIO is not accessible because it is inside the courtyard of U_MCU
+Test point TP_SWDIO is not accessible because it is inside the courtyard of R_SHUNT_A
+… 1 more pcb_placement_error not shown
+… 55 more pcb_footprint_overlap_error not shown
+… 12 more pcb_pad_pad_clearance_error not shown
+… 63 more pcb_courtyard_overlap_error not shown
+172 error(s), all written to dist/index/errors.json:
+  73  pcb_courtyard_overlap_error
+  65  pcb_footprint_overlap_error
+  22  pcb_pad_pad_clearance_error
+  11  pcb_placement_error
+   1  pcb_component_outside_board_error
+Generating preview images...
+[index] Generating PCB SVG...
+[index] Written pcb.svg
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred
