@@ -1,0 +1,213 @@
+{
+  "base_commit": "90f86f315744263af66219bfe5e9094a67678fe7",
+  "manufacturer_pdf_sources_retained_locally_only": true,
+  "qualified": false,
+  "manufacturing_release": false,
+  "files": [
+    {
+      "path": "studies/usb-followup-20261112/README.md",
+      "sha256": "589b27c6ee6bfdaa42ffe7d64bb95e1c32575e74b3c91bd483283dfadf747e1f",
+      "bytes": 7728
+    },
+    {
+      "path": "studies/usb-followup-20261112/alternatives.circuit.tsx",
+      "sha256": "3432a9de5724f94725f766ad581758672f80a7acc5cb4869c3419d940548e8a3",
+      "bytes": 800
+    },
+    {
+      "path": "studies/usb-followup-20261112/audit.json",
+      "sha256": "545c59a2e88b70d73cb1ee2f40cccef4241f489caaca92641af81654992c8b63",
+      "bytes": 7862
+    },
+    {
+      "path": "studies/usb-followup-20261112/audit.py",
+      "sha256": "7a9e8d0b1be662a8e006abcef84abdb3d8e9bc07f3132c62a294fbbc4ed6f485",
+      "bytes": 5896
+    },
+    {
+      "path": "studies/usb-followup-20261112/cam/B_Cu.gbr",
+      "sha256": "bc9479b837278c148e3b840eada6c2305310a80c59034739d4464d84bc2b0831",
+      "bytes": 2522
+    },
+    {
+      "path": "studies/usb-followup-20261112/cam/B_Mask.gbr",
+      "sha256": "17d08fcf8db4a621b6284600ce411906afbea2fb415ad1328b4810249a047170",
+      "bytes": 2931
+    },
+    {
+      "path": "studies/usb-followup-20261112/cam/B_Paste.gbr",
+      "sha256": "901341bf898cf2980b6be6a74f967c22cd6a2de0f02e353863d21013611604ff",
+      "bytes": 2555
+    },
+    {
+      "path": "studies/usb-followup-20261112/cam/B_SilkScreen.gbr",
+      "sha256": "f87f7f40e52875284f50bfbad24c735330a7efc84b613e379f0a513572da6c73",
+      "bytes": 1888
+    },
+    {
+      "path": "studies/usb-followup-20261112/cam/Edge_Cuts.gbr",
+      "sha256": "30655a52d381e9f23fb9a5f25ea617a1d1cfe8f80f4157545283137b3ce038cd",
+      "bytes": 493
+    },
+    {
+      "path": "studies/usb-followup-20261112/cam/F_Cu.gbr",
+      "sha256": "5b7928cc24a691c0da243ba3f0f7118df99f347f0c56d9b22597ddce96940e9c",
+      "bytes": 4676
+    },
+    {
+      "path": "studies/usb-followup-20261112/cam/F_Mask.gbr",
+      "sha256": "5dab7b326dac79e8611551dd43c11b246814332240b5127840196fc87ab98d5a",
+      "bytes": 4963
+    },
+    {
+      "path": "studies/usb-followup-20261112/cam/F_Paste.gbr",
+      "sha256": "38004e4fe60b986c44ba319883598d8739c5679a228ba452d66d38a6c3dfeeed",
+      "bytes": 4587
+    },
+    {
+      "path": "studies/usb-followup-20261112/cam/F_SilkScreen.gbr",
+      "sha256": "e13ed3e34d7b3f75644d5b5137fb8317f8c034f571465bd45c4a15e8513115f7",
+      "bytes": 8290
+    },
+    {
+      "path": "studies/usb-followup-20261112/cam/bom.csv",
+      "sha256": "c82d6d12adae195b751b0fd74abe69218d53efabba79923f4fef3283c001eb40",
+      "bytes": 294
+    },
+    {
+      "path": "studies/usb-followup-20261112/cam/drill-L1-L2.drl",
+      "sha256": "3db8ff44d840470cd56ff060e0d797e28e8f4d2a9c0f54dd60163907270edefa",
+      "bytes": 877
+    },
+    {
+      "path": "studies/usb-followup-20261112/cam/drill_npth.drl",
+      "sha256": "d4b0418527ec71970367ddf1073262cf1e7b87e58c1606a2555d4452e3524424",
+      "bytes": 533
+    },
+    {
+      "path": "studies/usb-followup-20261112/cam/pick_and_place.csv",
+      "sha256": "d5ffd80e27143b9c3ceba70c94eed7183ba3823d6eae06b427ba4364f58e0eab",
+      "bytes": 137
+    },
+    {
+      "path": "studies/usb-followup-20261112/import-staging/imports/USB4120_03_C/USB4120_03_C.obj",
+      "sha256": "cb2ccfc5e9861d29ca5377db305360e9249923ba87cb4a817de0ead101b809d6",
+      "bytes": 193789
+    },
+    {
+      "path": "studies/usb-followup-20261112/import-staging/imports/USB4120_03_C/USB4120_03_C.step",
+      "sha256": "59955809b2fd2289da312acf848d07a89b8f48017016b25f61479328b95d3793",
+      "bytes": 2081704
+    },
+    {
+      "path": "studies/usb-followup-20261112/import-staging/imports/USB4120_03_C/USB4120_03_C.tsx",
+      "sha256": "9f5bd08df1ff94050a55c297417f98f303cad31cabcad1de0891a84746bc4f95",
+      "bytes": 5151
+    },
+    {
+      "path": "studies/usb-followup-20261112/import-staging/imports/USB4140_GF_0070_C/USB4140_GF_0070_C.obj",
+      "sha256": "5005c167010c63e4f06811c256117aa2fbe80c9e57b4c3667361865a91939578",
+      "bytes": 266626
+    },
+    {
+      "path": "studies/usb-followup-20261112/import-staging/imports/USB4140_GF_0070_C/USB4140_GF_0070_C.step",
+      "sha256": "0ebca651a8e2b0cbde5ceb71a4f31724fe1ab5c869ba5a0bb0d57f3610d63c57",
+      "bytes": 4267794
+    },
+    {
+      "path": "studies/usb-followup-20261112/import-staging/imports/USB4140_GF_0070_C/USB4140_GF_0070_C.tsx",
+      "sha256": "b631393510640e21726bd8960730b02d923965c1eb76a72ba6b1a7149a437f4b",
+      "bytes": 3655
+    },
+    {
+      "path": "studies/usb-followup-20261112/logs/alternatives-build.log",
+      "sha256": "0be89011ad93d3df383c6cbb907f7426b721c5aab1700739b3262e0e10489348",
+      "bytes": 1618
+    },
+    {
+      "path": "studies/usb-followup-20261112/logs/rotation-build.log",
+      "sha256": "ca4397776897b953521db3a48ba909389868c4c2025f3d2545cf8b26e056df23",
+      "bytes": 2722
+    },
+    {
+      "path": "studies/usb-followup-20261112/logs/rotation-gerbers.log",
+      "sha256": "48c87e6a7e9f97c543636b999f811a1264cc2c99203f6d91edb085b511cfb1f7",
+      "bytes": 99
+    },
+    {
+      "path": "studies/usb-followup-20261112/logs/source-fetch.log",
+      "sha256": "eef9faf5e96006b641a3fa69642dee4fe3f231395c27a5f7573bad2b0437a5bc",
+      "bytes": 49
+    },
+    {
+      "path": "studies/usb-followup-20261112/logs/typecheck.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "studies/usb-followup-20261112/logs/usb4120-import.log",
+      "sha256": "6ed11b6f8184a50d680088e857beca2f79715e6fe8f9ce3b2600b4e501bcea36",
+      "bytes": 223
+    },
+    {
+      "path": "studies/usb-followup-20261112/logs/usb4140-import.log",
+      "sha256": "4d7f30758495b39b4839e4528fae7f8875470b9b59eb8da7702002aab088d44f",
+      "bytes": 376
+    },
+    {
+      "path": "studies/usb-followup-20261112/rotation.circuit.tsx",
+      "sha256": "e77b175e9c80adb602993c0ad83ffbf7c03249d9bc4b76e9a85dc604ee5d33bd",
+      "bytes": 758
+    },
+    {
+      "path": "studies/usb-followup-20261112/sources/C3445864.raweasy.json",
+      "sha256": "c50546ef8fb7fe53c387688947aaacda895ec29adb29144525a30105cf09ca8c",
+      "bytes": 41324
+    },
+    {
+      "path": "studies/usb-followup-20261112/sources/C7374561.raweasy.json",
+      "sha256": "16a991910d0a9042fa0e25a6bd27ecd44d666d282875e46edc5c591c6b3fd8ed",
+      "bytes": 34584
+    },
+    {
+      "path": "studies/usb-followup-20261112/sources/USB4120-download.json",
+      "sha256": "2b55a8b1a53a261846f687f1b6d0a92d35bf3bded0900b46c453e4e374903a69",
+      "bytes": 133
+    },
+    {
+      "path": "studies/usb-followup-20261112/sources/USB4140-download.json",
+      "sha256": "77fa0ff99ad1a586384505632078ef43b87f64636fec40a5182719ea6a64a9ee",
+      "bytes": 133
+    },
+    {
+      "path": "studies/usb-followup-20261112/sources/USB4145-download.json",
+      "sha256": "3721cd1a7e129ede719facb067107e0bd15d813e25b6517bcb1d943b387b1b83",
+      "bytes": 133
+    },
+    {
+      "path": "studies/usb-followup-20261112/tsconfig.json",
+      "sha256": "079caa0556de386fad0a688a04fc5988aceb2530a31550cf243b010c8ae5d7fe",
+      "bytes": 127
+    },
+    {
+      "path": "dist/studies/usb-followup-20261112/alternatives/circuit.json",
+      "sha256": "507060b94bf848f8c95c4d18737d0f9e53c0c245c54eef7effe40c2bdbb25a22",
+      "bytes": 79106
+    },
+    {
+      "path": "dist/studies/usb-followup-20261112/alternatives/pcb.svg",
+      "sha256": "c0e37713ffc0cbf5e255865ffa122fb3f7e8551792101289bc39dc5fa9c266c7",
+      "bytes": 46222
+    },
+    {
+      "path": "dist/studies/usb-followup-20261112/rotation/circuit.json",
+      "sha256": "cf5b57ac98f2a2c7c670815caa2a5739f103ab0b12a089a4e2652b3e7e36fbb3",
+      "bytes": 196808
+    },
+    {
+      "path": "dist/studies/usb-followup-20261112/rotation/pcb.svg",
+      "sha256": "8f2d82f7f0f5054b9151ec64ab43a05ea70613d87026df377048b9522c887e24",
+      "bytes": 69186
+    }
+  ]
+}

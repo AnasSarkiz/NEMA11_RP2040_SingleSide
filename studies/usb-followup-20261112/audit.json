@@ -1,0 +1,295 @@
+{
+  "base_commit": "90f86f315744263af66219bfe5e9094a67678fe7",
+  "cli": "0.1.2454",
+  "tscircuit": "0.0.3165",
+  "core": "0.0.2347",
+  "active_controller_unchanged": true,
+  "rotations": [
+    {
+      "name": "J1",
+      "rotation_deg": 0,
+      "slot": {
+        "type": "pcb_hole",
+        "pcb_hole_id": "pcb_hole_1",
+        "pcb_component_id": "pcb_component_0",
+        "hole_shape": "pill",
+        "hole_width": 1.5099792,
+        "hole_height": 0.7099808,
+        "x": -6.2000076,
+        "y": 9.0000254,
+        "is_covered_with_solder_mask": false,
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "shell_slots": 4,
+      "signal_pads": 16,
+      "paste_by_layer": {
+        "top": 20,
+        "bottom": 4
+      }
+    },
+    {
+      "name": "J2",
+      "rotation_deg": 90,
+      "slot": {
+        "type": "pcb_hole",
+        "pcb_hole_id": "pcb_hole_3",
+        "pcb_component_id": "pcb_component_1",
+        "hole_shape": "rotated_pill",
+        "hole_width": 1.5099792,
+        "hole_height": 0.7099808,
+        "x": 9.9999746,
+        "y": 12.7999924,
+        "ccw_rotation": 90,
+        "is_covered_with_solder_mask": false,
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "shell_slots": 4,
+      "signal_pads": 16,
+      "paste_by_layer": {
+        "top": 20,
+        "bottom": 4
+      }
+    },
+    {
+      "name": "J3",
+      "rotation_deg": 180,
+      "slot": {
+        "type": "pcb_hole",
+        "pcb_hole_id": "pcb_hole_5",
+        "pcb_component_id": "pcb_component_2",
+        "hole_shape": "rotated_pill",
+        "hole_width": 1.5099792,
+        "hole_height": 0.7099808,
+        "x": -13.7999924,
+        "y": -9.0000254,
+        "ccw_rotation": 180,
+        "is_covered_with_solder_mask": false,
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "shell_slots": 4,
+      "signal_pads": 16,
+      "paste_by_layer": {
+        "top": 20,
+        "bottom": 4
+      }
+    },
+    {
+      "name": "J4",
+      "rotation_deg": 270,
+      "slot": {
+        "type": "pcb_hole",
+        "pcb_hole_id": "pcb_hole_7",
+        "pcb_component_id": "pcb_component_3",
+        "hole_shape": "rotated_pill",
+        "hole_width": 1.5099792,
+        "hole_height": 0.7099808,
+        "x": 10.0000254,
+        "y": -12.7999924,
+        "ccw_rotation": 270,
+        "is_covered_with_solder_mask": false,
+        "subcircuit_id": "subcircuit_source_group_0"
+      },
+      "shell_slots": 4,
+      "signal_pads": 16,
+      "paste_by_layer": {
+        "top": 20,
+        "bottom": 4
+      }
+    }
+  ],
+  "npth_CAM_slots": [
+    {
+      "center": [
+        -6.199999999999999,
+        9.0
+      ],
+      "diameter": 0.709981,
+      "total_length": 1.5099809999999998,
+      "axis_deg": 0.0
+    },
+    {
+      "center": [
+        10.0,
+        12.8
+      ],
+      "diameter": 0.709981,
+      "total_length": 1.509980999999999,
+      "axis_deg": 90.0
+    },
+    {
+      "center": [
+        -13.8,
+        -9.0
+      ],
+      "diameter": 0.709981,
+      "total_length": 1.509980999999999,
+      "axis_deg": 0.0
+    },
+    {
+      "center": [
+        10.0,
+        -12.8
+      ],
+      "diameter": 0.709981,
+      "total_length": 1.509980999999999,
+      "axis_deg": 90.0
+    }
+  ],
+  "paste_CAM_flashes": {
+    "F_Paste.gbr": 80,
+    "B_Paste.gbr": 16
+  },
+  "rotation_native_counts": {
+    "schematic_sheet": 1,
+    "source_group": 1,
+    "source_port": 80,
+    "source_component": 4,
+    "source_board": 1,
+    "source_refdes_convention_warning": 4,
+    "source_component_internal_connection": 4,
+    "schematic_component": 4,
+    "schematic_text": 8,
+    "schematic_group": 1,
+    "schematic_port": 68,
+    "pcb_component": 4,
+    "pcb_board": 1,
+    "pcb_hole": 8,
+    "pcb_plated_hole": 16,
+    "pcb_solder_paste": 96,
+    "pcb_smtpad": 64,
+    "pcb_silkscreen_path": 24,
+    "pcb_silkscreen_text": 4,
+    "pcb_courtyard_outline": 4,
+    "pcb_port": 80,
+    "pcb_connector_not_in_accessible_orientation_warning": 4,
+    "cad_component": 4,
+    "source_component_availability_warning": 4,
+    "source_project_metadata": 1
+  },
+  "alternative_native_counts": {
+    "schematic_sheet": 1,
+    "source_group": 1,
+    "source_port": 30,
+    "source_component": 2,
+    "source_board": 1,
+    "source_refdes_convention_warning": 2,
+    "source_component_internal_connection": 2,
+    "schematic_component": 2,
+    "schematic_text": 4,
+    "schematic_group": 1,
+    "schematic_port": 24,
+    "pcb_component": 2,
+    "pcb_board": 1,
+    "pcb_hole": 4,
+    "pcb_plated_hole": 8,
+    "pcb_solder_paste": 38,
+    "pcb_smtpad": 22,
+    "pcb_silkscreen_path": 10,
+    "pcb_silkscreen_text": 2,
+    "pcb_courtyard_outline": 2,
+    "pcb_port": 30,
+    "pcb_connector_not_in_accessible_orientation_warning": 2,
+    "cad_component": 2,
+    "source_component_availability_warning": 2,
+    "source_project_metadata": 1
+  },
+  "alternatives": [
+    {
+      "part": "C7374561",
+      "manufacturer_part_number": "USB4140-GF-0070-C",
+      "native_and_source_courtyard_mm2": 51.8652863252191,
+      "increase_vs_USB4145_mm2": 5.305663594771644,
+      "native_holes": [
+        {
+          "type": "pcb_hole",
+          "pcb_hole_id": "pcb_hole_0",
+          "pcb_component_id": "pcb_component_0",
+          "hole_shape": "circle",
+          "hole_diameter": 0.8499856,
+          "x": -5.124976,
+          "y": -1.7874996,
+          "is_covered_with_solder_mask": false,
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "pcb_hole",
+          "pcb_hole_id": "pcb_hole_1",
+          "pcb_component_id": "pcb_component_0",
+          "hole_shape": "circle",
+          "hole_diameter": 0.649986,
+          "x": -12.875024,
+          "y": -1.7874996,
+          "is_covered_with_solder_mask": false,
+          "subcircuit_id": "subcircuit_source_group_0"
+        }
+      ],
+      "paste_by_layer": {
+        "top": 10,
+        "bottom": 4
+      },
+      "qualified": false
+    },
+    {
+      "part": "C3445864",
+      "manufacturer_part_number": "USB4120-03-C",
+      "native_and_source_courtyard_mm2": 55.69558275246369,
+      "increase_vs_USB4145_mm2": 9.135960022016235,
+      "native_holes": [
+        {
+          "type": "pcb_hole",
+          "pcb_hole_id": "pcb_hole_2",
+          "pcb_component_id": "pcb_component_1",
+          "hole_shape": "circle",
+          "hole_diameter": 0.5999988,
+          "x": 5.249944,
+          "y": -0.000127,
+          "is_covered_with_solder_mask": false,
+          "subcircuit_id": "subcircuit_source_group_0"
+        },
+        {
+          "type": "pcb_hole",
+          "pcb_hole_id": "pcb_hole_3",
+          "pcb_component_id": "pcb_component_1",
+          "hole_shape": "circle",
+          "hole_diameter": 0.5999988,
+          "x": 12.750056,
+          "y": -0.000127,
+          "is_covered_with_solder_mask": false,
+          "subcircuit_id": "subcircuit_source_group_0"
+        }
+      ],
+      "paste_by_layer": {
+        "top": 20,
+        "bottom": 4
+      },
+      "qualified": false
+    }
+  ],
+  "USB4140_supplier_raw_holes": [
+    {
+      "raw": "HOLE~4004.248~3005.587~1.6732~gge262~0",
+      "diameter_mm": 0.8499856
+    },
+    {
+      "raw": "HOLE~3973.736~3005.587~1.2795~gge265~0",
+      "diameter_mm": 0.6499860000000001
+    }
+  ],
+  "USB4145_A2_recommended_slot_mm": [
+    1.01,
+    0.71
+  ],
+  "drawing_slot_tolerance_mm": 0.05,
+  "USB4145_slot_excess_above_max_mm": 0.4499792,
+  "USB4140_A3_recommended_round_and_slot_mm": {
+    "round": 0.7,
+    "slot": [
+      1.0,
+      0.7
+    ]
+  },
+  "qualified": false,
+  "routing_attempted": false,
+  "manufacturing_ready": false,
+  "limits": "Independent connector diagnostics, not full controller placement or a top-only assembly acceptance. CAM is measurement evidence, not manufacturing release. Alternatives are larger and unqualified. No native/import override or source edit."
+}
