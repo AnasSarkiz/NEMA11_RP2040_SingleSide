@@ -1,9 +1,6 @@
 {
   "project": "AnasSarkiz/NEMA11_RP2040_SingleSide",
-  "created_remotely": false,
-  "pushed": false,
-  "registry_published": false,
-  "source_commit": "c50288a",
+  "source_commit": "e8a03c6",
   "native_build_command": "PATH=node_modules/.bin:$PATH XDG_CONFIG_HOME=.config tsci build index.circuit.tsx --pcb-svgs --schematic-svgs",
   "native_build_exit": 1,
   "typecheck_exit": 0,
@@ -28,5 +25,6 @@
     "WAGO bare-stranded AWG24-16 range does not qualify factory AWG26 leads",
     "172 native placement/clearance errors and 278 warnings",
     "Mechanical motor rear fasteners/gap/insulation/wire envelope, copper routing/CAM/process/live stock/bench acceptance open"
-  ]
+  ],
+  "snapshot_stage": "Native qualification checkpoint; publication tracked separately from engineering acceptance."
 }

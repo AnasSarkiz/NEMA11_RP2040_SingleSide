@@ -1,6 +1,6 @@
 # NEMA11 RP2040 — single-side assembly study
 
-Fresh single-side project, separate from `AnasSarkiz/NEMA11_RP2040` double-sided 0.6.9 WIP. Target identity: `AnasSarkiz/NEMA11_RP2040_SingleSide` on GitHub and tscircuit. These destinations are requested names; publication is pending.
+Fresh single-side project, separate from `AnasSarkiz/NEMA11_RP2040` double-sided 0.6.9 WIP. Separate project: [GitHub](https://github.com/AnasSarkiz/NEMA11_RP2040_SingleSide) · [tscircuit](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_SingleSide).
 
 **Unqualified source draft. No single-side fit, routed PCB, manufacturing approval or hardware claim.**
 
