@@ -1,0 +1,10 @@
+node_modules/
+.tscircuit/
+.config/
+.npm/
+.env
+.env.*
+__pycache__/
+*.pyc
+*.log
+import-staging/

@@ -1,0 +1,35 @@
+{
+  "name": "@tsci/AnasSarkiz.NEMA11_RP2040_SingleSide",
+  "version": "0.1.0-dev.1",
+  "private": true,
+  "type": "module",
+  "description": "NEMA11 RP2040 single-side assembly study; two copper layers; unqualified WIP",
+  "main": "index.circuit.tsx",
+  "scripts": {
+    "generate": "python3 scripts/generate.py",
+    "check": "python3 scripts/check.py",
+    "typecheck": "tsc --noEmit",
+    "build": "XDG_CONFIG_HOME=.config tsci build index.circuit.tsx --pcb-svgs --schematic-svgs",
+    "dev": "XDG_CONFIG_HOME=.config tsci dev index.circuit.tsx",
+    "check:generated": "python3 scripts/generate.py --check",
+    "check:native": "python3 scripts/audit_native.py",
+    "check:area": "python3 scripts/area_screen.py"
+  },
+  "dependencies": {
+    "@tscircuit/cli": "0.1.2454",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "three": "0.186.1",
+    "tscircuit": "0.0.3165"
+  },
+  "devDependencies": {
+    "@types/node": "22.18.6",
+    "@types/react": "19.1.16",
+    "bun": "1.4.4",
+    "typescript": "5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnasSarkiz/NEMA11_RP2040_SingleSide.git"
+  }
+}

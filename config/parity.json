@@ -1,0 +1,240 @@
+{
+  "all_acceptance_open": true,
+  "rows": [
+    {
+      "id": "R01",
+      "reference_requirement": "ENABLE_N/SLEEP bias strengthened to 10 k\u03a9",
+      "earlier_disposition": "Retained source: R_ENABLE C25744 pulls ENABLE_N to 3.3 V; R_SLEEP C25744 pulls SLEEP to GND, each 10 k\u03a9. Verify emitted pin nets and startup states; regenerate NEMA11 BOM.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "R02",
+      "reference_requirement": "Local 100 nF DATA_VBUS bypass at U_ESD",
+      "earlier_disposition": "Retained source: C_ESD C1525, 100 nF DATA_VBUS\u2013GND. Fresh placement must prove short actual pad/return paths beside U_ESD, then routing and CAM must preserve them.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "R03",
+      "reference_requirement": "PD-only USB-presence leakage qualification",
+      "earlier_disposition": "Deferred bench/design choice: R_USB_SENSE_H/L are 100 k\u03a9 each, DATA_VBUS \u2192 DATA_PRESENT \u2192 GND, GPIO29. Test reverse diode leakage, thresholds, temperature and attach/detach in PD-only, data-only and dual-input modes.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "R04",
+      "reference_requirement": "Actual phase current and temperature",
+      "earlier_disposition": "Deferred electrical/bench. NEMA11 has 20 k\u03a9/10 k\u03a9 VREF divider and 0.24 \u03a9 regulation shunts: ideal VREF = 1.1 V at 3.3 V, I_TRIP = 1.1/(8\u00d70.24) \u2248 0.573 A. This is neither a measured maximum nor automatically 0.67 A. Include supply/divider/shunt/driver tolerances, chopper behavior and two-layer thermal performance. Do not copy NEMA14's 0.351 A nominal or 0.378 A partial-model limit.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "O01",
+      "reference_requirement": "RP2040, 2 MB QSPI flash, reset/BOOT and SWD",
+      "earlier_disposition": "Retained source: U_MCU C2040, U_FLASH C2986331, QSPI, RUN pull-up, boot and debug access. Seven named bare test pads are represented as doNotPlace; verify they actually emit accessible copper pads rather than assuming DNP guarantees access. Test boot recovery and programming.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "O02",
+      "reference_requirement": "Bipolar A4988 motor drive, STEP/DIR, enable/sleep, fixed 1/16",
+      "earlier_disposition": "Retained source: U_DRV C38437; four winding outputs, microstep inputs to 3.3 V. Adapt motor to 11HS12-0674S, 0.67 A, maximum body length 33 mm. Validate phase pairing and R04; do not import 14HM11-0404S ratings.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "O03",
+      "reference_requirement": "Separate USB-C data and 15 V PD, buck and diode OR",
+      "earlier_disposition": "Retained source with design differences: two flat C165948 candidate sockets at +X data/+Y power edges, CH224Q C46061833 (not CH224A), 56 k\u03a9 R_PD_CFG, 0 \u03a9 R_PD, AP63203 buck and diode OR. Upright/all-top remains feasibility. Independently verify CH224Q physical pins 1 VHV, 6 CC2, 7 CC1, 8 VBUS, 9 CFG, 10 GOOD, 11 GND; NC 2\u20135, negotiation and all power modes.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "O04",
+      "reference_requirement": "PD-voltage ADC from actual PD_VBUS, \u00d711",
+      "earlier_disposition": "Retained source: R_VM_H 100 k\u03a9, R_VM_L 10 k\u03a9, C_VM_SENSE 10 nF, GPIO28/ADC2. Check divider tolerance, ADC range, filter settling and calibration; this is not independent winding-current sensing.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "O05",
+      "reference_requirement": "POWER_GOOD readable on GPIO10 with 10 k\u03a9 pull-up",
+      "earlier_disposition": "Retained source: PD_GOOD reaches RP2040 physical pin 13/GPIO10, R_PG 10 k\u03a9 to V3V3. Verify CH224Q semantics and safe startup/interlocks.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "O06",
+      "reference_requirement": "USBLC6-2SC6 data protection and 27 \u03a9 resistors",
+      "earlier_disposition": "Retained source: C2687116 U_ESD, R_DP/R_DM 27 \u03a9, DATA_VBUS reference, GND and C_ESD. Verify actual physical pin paths and short ESD return, USB impedance/return continuity on the selected two-layer stackup.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "O07",
+      "reference_requirement": "RGB with current limits, switching transistors and reset pulldowns",
+      "earlier_disposition": "Retained source: D_STATUS C458749 anode DATA_VBUS, three 1 k\u03a9 LED resistors, DMN2300UFB4-7B C154728 FETs, each with 1 k\u03a9 gate resistor and 10 k\u03a9 pulldown. Verify physical pin 1 gate/2 drain/3 source and drive at actual VGS. PD-only RGB remains unavailable by design (BEHAVIOR-01).",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "O08",
+      "reference_requirement": "Required magnetic buzzer and TMP102",
+      "earlier_disposition": "Retained source: BZ1 C94598, C154728 driver, 1 k\u03a9 gate/10 k\u03a9 pulldown, flyback diode, 10 \u00b5F bypass; TMP102 C99269, 4.7 k\u03a9 I\u00b2C pull-ups. Exact 2021 buzzer sheet allows 2\u20134 Vo-p, nominal 3 Vo-p, 4 kHz \u00b1200 Hz/50% square wave, \u226575 dB at 10 cm and 250 \u00b0C maximum reflow. Its 100 mA rating is not explicitly peak/RMS/average. Measure actual 3.3 V drive waveform, clamp/freewheel current, SPL and temperature. Preserve buzzer/clamp.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "O09",
+      "reference_requirement": "Crystal, 15 pF loads, XOUT resistor and bypass/bulk",
+      "earlier_disposition": "Retained source: 12 MHz Y_MCU, two 15 pF capacitors, 1 k\u03a9 XOUT resistor and MCU/flash/driver supply capacitors. NEMA14's top/no-via oscillator routing is not inherited; inspected initial NEMA11 Y_MCU is bottom. Qualify short quiet oscillator loop, local bypass and bulk placement on fresh layout.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "O10",
+      "reference_requirement": "Four holes and screw-head exclusion",
+      "earlier_disposition": "Mechanical adaptation: \u00b111.5 mm axes (23 mm square), provisional \u00d82.7 mm holes/R2.35 mm heads, not NEMA14's 26 mm square/\u00d83.2/\u00d86.4. Verify actual rear shank, thread, head, grip, engagement, torque, insulation and PCB-to-motor gap on both sides; front M2.5 data is not rear-bolt evidence.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "O11",
+      "reference_requirement": "Seven schematic sheets, complete coverage",
+      "earlier_disposition": "Implemented in source: **seven** A4 functional sheets: power/PD, programming/USB, controller/clocks, motor driver, temperature/optional encoder, RGB/power indicators, buzzer. Offline checks prove every one of 99 source components appears once. Native emitted-sheet and export contracts now require seven. Fresh native output, port checks, box/port gaps and visual review remain pending.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "O12",
+      "reference_requirement": "Native PCB/schematic/3D views and viewer smoke check",
+      "earlier_disposition": "Retained native source capability, verification pending. Fresh native views must match reviewed hash and show all sheets/models. No publication or public viewer readback is authorized yet; old package previews are not this reconstruction.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "O13",
+      "reference_requirement": "Native motor-and-wire assembly preview",
+      "earlier_disposition": "Missing verified NEMA11 assembly preview. Use actual motor/lead geometry, correct rear interface and proposed connector; no invented carrier or approved 2 mm gap. Show hardware only with qualified dimensions. Test plug, screwdriver/button and wire insertion/bend access. NEMA14's direct WAGO leads are not NEMA11 evidence.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "O14",
+      "reference_requirement": "Bottom wordmark and exact evaluation disclaimer",
+      "earlier_disposition": "Missing/unverified board artwork: inspected main source contains no completed logo/disclaimer implementation. Obtain original official wordmark and exact two evaluation lines from their authoritative artifact before recreating them; their wording is not included in the saved checklist and must not be invented. Adapt placement to 28 mm, read correctly from below, and check actual vector ink against pads, holes, board edge, fastener heads and legends, then actual CAM. NEMA14's 532-path pass does not transfer.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "O15",
+      "reference_requirement": "All parts available and affordable at JLCPCB",
+      "earlier_disposition": "Deferred procurement: complete fresh fitted-BOM stock, price, Economic/Standard eligibility and assembly quote. Import success/catalog snapshots are not live availability, reserved stock, process approval or affordability.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "V01",
+      "reference_requirement": "Large bottom 3.2 mm PWR/DATA knockout labels",
+      "earlier_disposition": "Missing artwork/design adaptation. Make labels follow actual NEMA11 connectors (+Y PWR, +X DATA for fallback), not NEMA14's left-edge DATA. Evaluate 3.2 mm label readability/space before claiming fit; preserve accepted non-target art once it exists. Verify mirrored underside text and actual Gerber ink.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "V02",
+      "reference_requirement": "Independent measurement of both coil currents",
+      "earlier_disposition": "**Missing feature**: no independent inline 50 m\u03a9 shunts, INA240A1PWR amplifiers or 100 \u03a9/10 nF output filters. R_SA/R_SB are A4988 regulation shunts, not this feature. Need supported untouched imports, analogue budget, compact fit and explicit feasibility/design resolution; no silent substitution or claim it is already supported.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "V03",
+      "reference_requirement": "Kelvin sensing and six \u22650.30 mm motor-current sections",
+      "earlier_disposition": "Missing telemetry routing, deferred routing/bench. If V02 implemented, four Kelvin pickups must meet load conductors only at their shunt pads. Derive NEMA11 path counts from actual topology and calculate copper/thermal needs for two layers/0.67 A target; 0.30 mm alone is not thermal acceptance. Calibration and chopper-transient sampling remain bench work.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "V04",
+      "reference_requirement": "Replace JST with WAGO 250-204 / C2765063",
+      "earlier_disposition": "**Missing feature/mechanical blocker**: source retains JST C131334, pin order 1 A+, 2 A\u2212, 3 B+, 4 B\u2212. Do not substitute WAGO without fit and lead qualification. User's NEMA14 spring-clamp requirement must be resolved, not silently dropped.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "V05",
+      "reference_requirement": "Factory motor leads fit clamp",
+      "earlier_disposition": "Known incompatibility to resolve: recorded NEMA11 motor leads are AWG26; WAGO bare-stranded specification is 24\u201316 AWG / 0.2\u20131.5 mm\u00b2, strip 8.5\u20139.5 mm. AWG26 is below its bare-wire minimum. Direct insertion is not qualified; a termination adaptation needs manufacturer compatibility and tested retention/access. Do not assume a ferrule or solder-tinning makes it acceptable.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "V06",
+      "reference_requirement": "Smaller outline, 34.5 mm/four layers",
+      "earlier_disposition": "Adapted fixed scope: retain 28 mm/two layers/1.6 mm and 28.3 mm assembly-frame target. NEMA14 dimensions and prior shrink choices do not authorize enlarging or changing layers.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "V07",
+      "reference_requirement": "Top assembly, bottom bare debug pads only",
+      "earlier_disposition": "User-requested feasibility, **not achieved/accepted**. Reconstruction candidate includes fitted bottom parts, unlike NEMA14. Assess all-top with both upright USB-C including bodies, pads, courtyard, rear bolts, insertion access, test pads and solder process; do not delete buzzer/features or patch imports to force fit. Bare test pads alone do not require bottom component assembly.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "V08",
+      "reference_requirement": "Both encoder capacitors fitted on top",
+      "earlier_disposition": "Design difference: C_ENCODER 100 nF and C_ENCODER_BULK 1 \u00b5F exist but both are bottom/DNP in inspected source/initial placement. This does not satisfy NEMA14's fitted-top choice. Resolve desired fit population and top placement; do not count DNP caps among fitted parts.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "V09",
+      "reference_requirement": "Optional AS5600 bottom/DNP",
+      "earlier_disposition": "Retained source: U_ENCODER C79815 bottom/DNP on shared I\u00b2C. No operating encoder claim. Rear shaft, magnet, axial/radial alignment, air gap and power-up remain separate fit/function gates if populated.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "V10",
+      "reference_requirement": "I\u00b2C moved to GPIO4/5, freeing ADC26/27",
+      "earlier_disposition": "Implemented in source: TEMP_SDA moves to GPIO4/physical pin 6 and TEMP_SCL to GPIO5/pin 7, I2C0. GPIO26/27 (physical pins 38/39) are explicitly NC, reserved until V02 telemetry exists. Source and emitted regression contracts cover these exact changes. This reserves the ADC channels; it does not implement current measurement. Native verification and matching firmware remain pending.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "V11",
+      "reference_requirement": "Fresh USB imports retain two locators/four shell tabs",
+      "earlier_disposition": "Open import/mechanical gate. C5815189 USB4145 stays excluded for locator mismatch. Current C165948 is an unapproved flat fallback, not an upright equivalent. Compare latest untouched supported import, manufacturer drawing and emitted native geometry including all locators/shell tabs/signal lands before replacement.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "V12",
+      "reference_requirement": "Correct USB capsule rotation, native/G85 agreement; slot widening",
+      "earlier_disposition": "Open tool/CAM adaptation. Verify each chosen connector's real local/world hole axes after rotation and later exported drill paths. NEMA14's 1.80 \u00d7 1.00 mm board-slot widening cannot be hand-applied to NEMA11 purchased footprints. A manufacturer- and process-valid supported import/release is required. Keep minimal repro of any oval rotation problem; do not transfer NEMA14 rotation values to different connector geometry.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "V13",
+      "reference_requirement": "Routing complete, all 70 groups and zero violations",
+      "earlier_disposition": "Deferred and intentionally disabled. NEMA11 must derive its own physical net groups, then prove connectivity, no shorts/floating islands/foreign copper, edge/hole/construction violations and zero DRC findings. NEMA14's 70 count and route pass are not an acceptance target by themselves. No routing until prior gates pass.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "V14",
+      "reference_requirement": "Via diameters, annulus and thermal vias checked",
+      "earlier_disposition": "Source constraints retain \u00d80.45 pad/\u00d80.30 drill (0.075 mm ideal annulus); fabricated annulus/tolerances and stackup need approval. Do not invent the NEMA14 three \u00d80.50/\u00d80.30 exposed-pad vias. Select NEMA11 thermal strategy and assess via-in-pad filling/capping, stencil and solder-wicking consequences with fabricator.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "V15",
+      "reference_requirement": "Separate GitHub and package, V1 unchanged",
+      "earlier_disposition": "Adapted history rule: continue existing NEMA11 repo/package and board, **no new V2**. Preserve historical evidence/version lineage; separate action approvals for publication, merge, registry upload and ordering. A future approved publish requires exact readback and a bounded preview/metadata payload, not automatic copying of NEMA14's eight-file count.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "V16",
+      "reference_requirement": "Datasheets/history in GitHub, clean preview package",
+      "earlier_disposition": "Retain provenance, datasheets, supported supplier asset hashes, reconstruction record and future immutable model URLs in existing repo/history. Keep manufacturing downloads and unrelated legacy assets out of preview package. Save complete-history Git bundles privately after checkpoints; do not claim missing commit objects were recovered. Publication requires separate approval.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "A01",
+      "reference_requirement": "Driver bulk placement corrected, 47 \u00b5F/35 V, short feeds/returns",
+      "earlier_disposition": "Retained source C_BULK C72522 is 47 \u00b5F/35 V candidate; prove fresh pad distances, actual loop copper/ground returns and local C_VM at U_DRV. No NEMA14 4.03/5.02 mm or 7.80/10.37 mm distance transfers. Smaller bulk is not an approved substitution.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "A02",
+      "reference_requirement": "Fabricator-compatible 1.00 mm locating slots",
+      "earlier_disposition": "Deferred manufacturer/import/CAM/process gate, as V11/V12. Preserve valid supplier centerlines/axes and obtain supported corrected imports rather than locally widening purchased geometry.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    },
+    {
+      "id": "A03",
+      "reference_requirement": "No component-body collisions, 98 STEP bodies at 0.10 mm",
+      "earlier_disposition": "Fresh full 3D collision/clearance proof required for **NEMA11's** fitted population, motor, fasteners, plugs and wires. NEMA14's 98 bodies and 0.10 mm nominal separation are historical reference metrics, not proof of NEMA11 tolerance or access.",
+      "acceptance": "open; fresh NEMA11 evidence required"
+    }
+  ],
+  "draft_additions": [
+    "two independent inline 50mOhm INA240A1 channels",
+    "ADC0/ADC1 connections",
+    "upright USB physical pin mapping",
+    "fitted top encoder capacitors",
+    "WAGO candidate, AWG26 mismatch unresolved"
+  ]
+}

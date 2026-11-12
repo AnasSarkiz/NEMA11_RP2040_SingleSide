@@ -1,0 +1,30 @@
+[
+  {
+    "source": "https://github.com/AnasSarkiz/NEMA14_RP2040_V2/blob/d9fcd4208bf7a93743447e1a0ab2c780aa08e304/docs/v2-requirements-checklist.md",
+    "ref": "d9fcd4208bf7a93743447e1a0ab2c780aa08e304",
+    "git_blob_sha": "7eef9dc2c27831594c3454606a7425d603170f04",
+    "path": "references/nema14/v2-requirements-checklist.md",
+    "sha256": "a901280b56aa5474885585e6241fc39fbd5e14b439579d6d1549ea2084796a17"
+  },
+  {
+    "source": "https://github.com/AnasSarkiz/NEMA14_RP2040_V2/blob/d9fcd4208bf7a93743447e1a0ab2c780aa08e304/docs/v2-design.md",
+    "ref": "d9fcd4208bf7a93743447e1a0ab2c780aa08e304",
+    "git_blob_sha": "5bfc90b26f2093256c811661e44bb5a356c8cc65",
+    "path": "references/nema14/v2-design.md",
+    "sha256": "70d1671518be6a5bdad3c550d31a2674bbbd4715c4081f908d8cd002abd9f4b7"
+  },
+  {
+    "source": "https://github.com/AnasSarkiz/NEMA14_RP2040_V2/blob/d9fcd4208bf7a93743447e1a0ab2c780aa08e304/docs/firmware-interface.md",
+    "ref": "d9fcd4208bf7a93743447e1a0ab2c780aa08e304",
+    "git_blob_sha": "d765a8e5b6731d95bd98dacb78c654005a404c15",
+    "path": "references/nema14/firmware-interface.md",
+    "sha256": "329cb4b6665fb1e6caa880568a190316aa0737f19f67d36aefb3aa78f23f5df4"
+  },
+  {
+    "source": "https://github.com/AnasSarkiz/NEMA14_RP2040_V2/blob/d9fcd4208bf7a93743447e1a0ab2c780aa08e304/docs/v2-motor-assembly.md",
+    "ref": "d9fcd4208bf7a93743447e1a0ab2c780aa08e304",
+    "git_blob_sha": "55a137fe6c607e8ba42596f4d385acf4278681e9",
+    "path": "references/nema14/v2-motor-assembly.md",
+    "sha256": "00b35b4ce073d3de1528da7998247d399041e33805bcf2dc0dbdbc4717e15aee"
+  }
+]

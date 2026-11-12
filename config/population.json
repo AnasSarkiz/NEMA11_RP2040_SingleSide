@@ -1,0 +1,18 @@
+{
+  "DNP": [
+    "U_ENCODER"
+  ],
+  "bare_pads": [
+    "TP_3V3",
+    "TP_GND",
+    "TP_SWCLK",
+    "TP_SWDIO",
+    "TP_RUN",
+    "TP_BOOT",
+    "TP_BOOT_GND"
+  ],
+  "capacitors_fitted_top": [
+    "C_ENCODER",
+    "C_ENCODER_BULK"
+  ]
+}

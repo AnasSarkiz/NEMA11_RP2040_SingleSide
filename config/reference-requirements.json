@@ -1,0 +1,309 @@
+{
+  "ref": "d9fcd4208bf7a93743447e1a0ab2c780aa08e304",
+  "source": "references/nema14/v2-requirements-checklist.md",
+  "requirements": [
+    {
+      "section": "V2 requirements and review checklist",
+      "reference_checked": true,
+      "requirement": "Strengthen ENABLE_N/SLEEP hardware bias to 10 k\u03a9 and regenerate the BOM.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "V2 requirements and review checklist",
+      "reference_checked": true,
+      "requirement": "Add local 100 nF DATA_VBUS-to-ground bypass beside U_ESD and requalify CAD/CAM.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "V2 requirements and review checklist",
+      "reference_checked": false,
+      "requirement": "Qualify PD-only USB-presence detection against reverse diode leakage.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "V2 requirements and review checklist",
+      "reference_checked": false,
+      "requirement": "Validate actual current/temperature; the 0.378 A calculation is a supply/resistor-only model, not a complete maximum-current guarantee.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Original NEMA14 requirements retained",
+      "reference_checked": true,
+      "requirement": "**RP2040 controller:** RP2040 C2040, external 2 MB QSPI flash, reset/BOOT recovery and SWD access are retained in the source and connected copper.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Original NEMA14 requirements retained",
+      "reference_checked": true,
+      "requirement": "**NEMA14 bipolar motor drive:** A4988, STEP/DIR, enable/sleep, two winding outputs and fixed 1/16 microstepping are retained. Target motor remains 14HM11-0404S, rated 0.4 A/phase. The actual default current limit is about **0.351 A nominal**, not an assumed 0.4 A.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Original NEMA14 requirements retained",
+      "reference_checked": true,
+      "requirement": "**USB-C data and separate PD power:** both upright GCT USB4145 sockets, programming/control data, CH224A C42459160 with a 56 k\u03a9 15 V request, 3.3 V buck supply and the diode power-OR connections are retained.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Original NEMA14 requirements retained",
+      "reference_checked": true,
+      "requirement": "**PD-voltage ADC:** R_VM_H/R_VM_L are 100 k\u03a9/10 k\u03a9, connected to the actual PD_VBUS net and GPIO28/ADC2. Nominal voltage conversion is \u00d711.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Original NEMA14 requirements retained",
+      "reference_checked": true,
+      "requirement": "**POWER_GOOD readable:** PD_GOOD reaches GPIO10 with a 10 k\u03a9 3.3 V pull-up.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Original NEMA14 requirements retained",
+      "reference_checked": true,
+      "requirement": "**USB data protection:** USBLC6-2SC6, both data lines, 27 \u03a9 series resistors, grounds and the DATA_VBUS reference connection are retained.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Original NEMA14 requirements retained",
+      "reference_checked": true,
+      "requirement": "**RGB LED:** RGB device, three current-limit resistors, three GPIO-driven switching transistors and reset pull-downs are present. See the power-mode behavior below before accepting all operating modes.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Original NEMA14 requirements retained",
+      "reference_checked": true,
+      "requirement": "**Buzzer and temperature:** the compact magnetic buzzer, driver, flyback diode and decoupling are present; TMP102 and its I\u00b2C pull-ups are retained.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Original NEMA14 requirements retained",
+      "reference_checked": true,
+      "requirement": "**Crystal and bypass components:** 12 MHz crystal, two 15 pF load capacitors, XOUT resistor, MCU/flash/driver power decoupling and bulk capacitor are retained. The routed oscillator stays on top without vias.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Original NEMA14 requirements retained",
+      "reference_checked": true,
+      "requirement": "**Mounting geometry:** four \u00d83.2 mm holes on a 26 mm square, with \u00d86.4 mm screw-head envelopes on both outer surfaces, are retained in CAD.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Original NEMA14 requirements retained",
+      "reference_checked": true,
+      "requirement": "**Seven schematic sheets:** every component is represented; the current native schematic-placement command exits successfully. Visual approval of clarity, labels and port presentation remains separate.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Original NEMA14 requirements retained",
+      "reference_checked": true,
+      "requirement": "**Native tscircuit PCB/schematic/3D views:** the exact checked board is published, and the standalone native viewer passed its PCB/3D/schematic smoke check.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Original NEMA14 requirements retained",
+      "reference_checked": true,
+      "requirement": "**V2 native motor-and-wire CAD preview:** the default preview now includes the motor reference, four direct WAGO leads; mounting hardware is omitted pending rear-interface confirmation. Physical rear retention, factory wire fit and tool/USB operating access remain open under MECH-01.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Original NEMA14 requirements retained",
+      "reference_checked": true,
+      "requirement": "**Bottom logo and exact evaluation disclaimer, CAD scope:** all 532 vector paths read correctly from below, remain inside the board and pass ink-to-pad/hole/edge/head and label checks. Final manufacturing CAM remains part of RELEASE-01.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Original NEMA14 requirements retained",
+      "reference_checked": false,
+      "requirement": "**All components available and affordable at JLCPCB:** a complete current live-stock, Economic/Standard eligibility and assembly-price confirmation is still needed. Dated catalog/mirror snapshots are not purchasing acceptance.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Initial V2 requirements and later accepted choices",
+      "reference_checked": true,
+      "requirement": "**Large bottom USB labels:** 3.2 mm PWR/DATA knockout blocks, checked against pads, holes, artwork and the final exported Gerber. All records outside these two labels, the revision caption and the translated wordmark are preserved from dev.8.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Initial V2 requirements and later accepted choices",
+      "reference_checked": true,
+      "requirement": "**Measure both coil currents with the RP2040:** independent 50 m\u03a9 inline shunts, INA240A1PWR amplifiers and 100 \u03a9/10 nF output filters reach GPIO26/ADC0 and GPIO27/ADC1. They are separate from the A4988 regulation shunts.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Initial V2 requirements and later accepted choices",
+      "reference_checked": true,
+      "requirement": "**Correct sensor routing:** all four Kelvin pickups join the load-current conductors only at their shunt pads. Six motor-current path sections have connected copper at least 0.30 mm wide. This is a routing check; calibration, chopper-transient behavior and sampled-current accuracy need bench acceptance.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Initial V2 requirements and later accepted choices",
+      "reference_checked": true,
+      "requirement": "**Replace JST with a spring clamp:** one four-pole WAGO **250-204 / C2765063**, with poles 1 A+, 2 A\u2212, 3 B+, 4 B\u2212, replaces the JST/two-terminal alternatives. Its supplier housing/courtyard fits the final CAD layout.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Initial V2 requirements and later accepted choices",
+      "reference_checked": false,
+      "requirement": "**Factory motor leads fit the clamp:** WAGO's documented bare stranded range is 0.2\u20131.5 mm\u00b2 / 24\u201316 AWG with 8.5\u20139.5 mm stripping. The motor drawing does not establish factory lead CSA/insulation diameter. Verify actual leads, retention, button access and repeated connection with samples.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Initial V2 requirements and later accepted choices",
+      "reference_checked": true,
+      "requirement": "**Smaller board:** final accepted dimensions are **34.5 \u00d7 34.5 \u00d7 1.6 mm**, four layers. This removes 0.25 mm per side from V1's 35 mm board. The earlier request for 0.5 mm per side was superseded by the accepted 34.5 mm outline.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Initial V2 requirements and later accepted choices",
+      "reference_checked": true,
+      "requirement": "**Top assembly:** all fitted components are on top. Five bare debug pads are on bottom; they do not require bottom component placement. Through-hole solder joints still need supplier process approval.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Initial V2 requirements and later accepted choices",
+      "reference_checked": true,
+      "requirement": "**Both encoder capacitors on top:** C_ENCODER is 100 nF and C_ENCODER_BULK is 1 \u00b5F, both fitted on top across 3.3 V/GND.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Initial V2 requirements and later accepted choices",
+      "reference_checked": true,
+      "requirement": "**Optional encoder retained:** AS5600 is bottom/DNP, connected to the shared I\u00b2C bus. Installing it and verifying rear shaft, magnet and air gap are separate mechanical/functional work; an operating encoder is not proven.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Initial V2 requirements and later accepted choices",
+      "reference_checked": true,
+      "requirement": "**Temperature/encoder I\u00b2C moved to spare pins:** GPIO4/5 on I\u00b2C0 leave GPIO26/27 free for current ADC inputs. Firmware must use the V2 pin map.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Initial V2 requirements and later accepted choices",
+      "reference_checked": true,
+      "requirement": "**USB footprints reimported:** checked with tscircuit 0.0.3062, core 0.0.2259 and CLI 0.1.2429. Both locating holes and four shell tabs per connector are retained; no signal lands or connector poses moved.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Initial V2 requirements and later accepted choices",
+      "reference_checked": true,
+      "requirement": "**USB slot rotation fixed:** J_DATA's capsule is at 90\u00b0, J_PD's at 0\u00b0. Both native geometry and exported G85 tool paths pass the orientation check. Board clearance capsules are widened to 1.80 \u00d7 1.00 mm for CNC capability; centers, axes, round locators and solder lands remain unchanged. A minimal repro documents the remaining core `oval` rotation bug.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Initial V2 requirements and later accepted choices",
+      "reference_checked": true,
+      "requirement": "**Routing completed:** all 70 physical net groups connected, zero shorts, zero PCB DRC errors/warnings, zero floating islands, zero foreign-copper, board-edge, mounting-hole or construction violations in the current audit.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Initial V2 requirements and later accepted choices",
+      "reference_checked": true,
+      "requirement": "**Via sizes/clearances checked:** ordinary minimum pad/drill is \u00d80.45/\u00d80.30 mm, annulus \u22650.075 mm. Three explicitly checked \u00d80.50/\u00d80.30 mm exposed-pad GND thermal vias are retained. Actual supplier drills/slots and the defined mounting clearances are included in the checks.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Initial V2 requirements and later accepted choices",
+      "reference_checked": true,
+      "requirement": "**Separate GitHub repository and tscircuit package:** both use AnasSarkiz/NEMA14_RP2040_V2. Source and evidence were pushed; the registry contains only eight preview/metadata files. V1's package remains unchanged.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Initial V2 requirements and later accepted choices",
+      "reference_checked": true,
+      "requirement": "**Keep datasheets/history in GitHub:** the public V2 package excludes V1 assembly, datasheets, supplier model files and manufacturing downloads. Model URLs point to verified immutable assets in the new V2 GitHub repository.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Evidence",
+      "reference_checked": true,
+      "requirement": "**Driver bulk capacitor placement corrected:** 47 \u00b5F / 35 V retained, supply-land distances 4.03/5.02 mm, conservative copper-path bounds 7.80/10.37 mm, two nearby GND returns; local ceramic remains fitted.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Evidence",
+      "reference_checked": true,
+      "requirement": "**Fabricator-compatible locating-slot width:** native and exported capsules are 1.00 mm wide while preserving the imported tool centerlines.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    },
+    {
+      "section": "Evidence",
+      "reference_checked": true,
+      "requirement": "**No component-body collisions in the nominal CAD screen:** all 98 fitted supplier STEP bodies checked at 0.10 mm separation.",
+      "nema11_acceptance": "open; fresh project evidence required"
+    }
+  ],
+  "acceptance": [
+    {
+      "id": "ART-01",
+      "reference_status": "Resolved in CAD",
+      "acceptance_required": "Official wordmark and both evaluation lines read correctly from below and pass actual vector-ink pad/hole/edge checks. See [full artwork and assembly](v2-motor-assembly.md).",
+      "nema11_status": "open"
+    },
+    {
+      "id": "ART-02",
+      "reference_status": "Resolved",
+      "acceptance_required": "DATA follows the left-edge data connector. Essential legends pass the [actual Gerber ink review](v2-critical-silkscreen.md).",
+      "nema11_status": "open"
+    },
+    {
+      "id": "BEHAVIOR-01",
+      "reference_status": "Needs acceptance or a design change",
+      "acceptance_required": "RGB's common anode is DATA_VBUS powered. It does not light with PD power alone; the 3.3 V power LED remains available. Confirm whether standalone PD operation requires RGB status.",
+      "nema11_status": "open"
+    },
+    {
+      "id": "MECH-01",
+      "reference_status": "Open",
+      "acceptance_required": "Confirm factory wire gauge/CSA, clamp retention, button/tool/wire access and actual motor/PCB/fastener assembly.",
+      "nema11_status": "open"
+    },
+    {
+      "id": "BUY-01",
+      "reference_status": "Open",
+      "acceptance_required": "Verify live JLCPCB stock/quote for the complete fitted BOM, especially WAGO C2765063, inline shunts C713441, regulation shunts C186557 and bulk capacitor C193627.",
+      "nema11_status": "open"
+    },
+    {
+      "id": "ASSY-01",
+      "reference_status": "Open",
+      "acceptance_required": "Confirm Economic assembly eligibility and cost, WAGO through-hole soldering and USB shell-joint process, plus supplier pickup/rotation approval for V2.",
+      "nema11_status": "open"
+    },
+    {
+      "id": "ELEC-01",
+      "reference_status": "Local bulk geometry corrected; bench/stackup acceptance open",
+      "acceptance_required": "Bulk is now beside the driver, with short feeds and nearby ground returns. Full motor-current and Kelvin checks pass. USB behavior, transients and temperature remain prototype bench checks.",
+      "nema11_status": "open"
+    },
+    {
+      "id": "FW-01",
+      "reference_status": "Open",
+      "acceptance_required": "Implement/adapt firmware for the V2 pin map, PD-good/voltage interlocks, boot/USB behavior, ADC sampling/zero-gain calibration and motor switching. No application firmware is present in this repository.",
+      "nema11_status": "open"
+    },
+    {
+      "id": "BENCH-01",
+      "reference_status": "Open",
+      "acceptance_required": "Verify PD negotiation, 3.3 V regulation, USB boot/enumeration, crystal startup, signed coil-current accuracy, temperatures, motor load behavior, RGB/buzzer and I\u00b2C/encoder operation as fitted.",
+      "nema11_status": "open"
+    },
+    {
+      "id": "DOC-01",
+      "reference_status": "Resolved",
+      "acceptance_required": "The 22 source-library advisories are corrected at their definitions. Fresh source, pin and schematic diagnostics are zero; a negative-control IC still triggers genuine warnings. See [analysis evidence](v2-analysis-warnings.md).",
+      "nema11_status": "open"
+    },
+    {
+      "id": "SCH-01",
+      "reference_status": "Open visual approval",
+      "acceptance_required": "Native placement passes. Review the seven schematic pages for readability and the original box/port-gap concern before final signoff.",
+      "nema11_status": "open"
+    },
+    {
+      "id": "RELEASE-01",
+      "reference_status": "V2 files prepared; supplier acceptance pending",
+      "acceptance_required": "Use only the V2 order-review folder and its independent CAM audit. Obtain stock/quote, pickup, stencil, filled/capped-via and solder-process acceptance. Historical V1 manufacturing artifacts are not V2 files.",
+      "nema11_status": "open"
+    }
+  ],
+  "note": "Every original checklist bullet retained verbatim as reference data; no NEMA14 checkmark transfers."
+}

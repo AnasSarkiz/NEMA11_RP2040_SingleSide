@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "types": [
+      "tscircuit",
+      "node"
+    ],
+    "resolveJsonModule": true
+  },
+  "include": [
+    "index.circuit.tsx",
+    "imports/**/*.tsx",
+    "assets.d.ts"
+  ]
+}
