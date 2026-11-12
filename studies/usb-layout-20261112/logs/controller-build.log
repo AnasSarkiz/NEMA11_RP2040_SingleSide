@@ -1,0 +1,113 @@
+Building 1 file(s)...
+Building studies/usb-layout-20261112/controller.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/studies/usb-layout-20261112/controller/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Y" prefix is being used with a <chip />, try using it with a <crystal />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+J_PD has no pin with requires_power=true
+J_PD has no pin with requires_ground=true
+U_PD has no pin with requires_ground=true
+D_TVS has no pin with requires_power=true
+D_TVS has no pin with requires_ground=true
+All pins on D_TVS are underspecified (no pinAttributes set)
+J_DATA has no pin with requires_power=true
+J_DATA has no pin with requires_ground=true
+U_ESD has no pin with requires_power=true
+Y_MCU has no pin with requires_ground=true
+All pins on Y_MCU are underspecified (no pinAttributes set)
+J_MOTOR has no pin with requires_ground=true
+U_IA has no pin with requires_power=true
+U_IB has no pin with requires_power=true
+D_STATUS has no pin with requires_power=true
+D_STATUS has no pin with requires_ground=true
+All pins on D_STATUS are underspecified (no pinAttributes set)
+Q_STATUS_R has no pin with requires_power=true
+Q_STATUS_R has no pin with requires_ground=true
+All pins on Q_STATUS_R are underspecified (no pinAttributes set)
+Q_STATUS_G has no pin with requires_power=true
+Q_STATUS_G has no pin with requires_ground=true
+All pins on Q_STATUS_G are underspecified (no pinAttributes set)
+Q_STATUS_B has no pin with requires_power=true
+Q_STATUS_B has no pin with requires_ground=true
+All pins on Q_STATUS_B are underspecified (no pinAttributes set)
+All pins on Q_BUZZER are underspecified (no pinAttributes set)
+schematic_component schematic_component_53 extends outside the drawing area of schematic sheet "04 Stepper motor driver"
+schematic_component schematic_component_54 extends outside the drawing area of schematic sheet "04 Stepper motor driver"
+schematic_component schematic_component_55 extends outside the drawing area of schematic sheet "04 Stepper motor driver"
+schematic_component schematic_component_56 extends outside the drawing area of schematic sheet "04 Stepper motor driver"
+schematic_component schematic_component_57 extends outside the drawing area of schematic sheet "04 Stepper motor driver"
+schematic_component schematic_component_58 extends outside the drawing area of schematic sheet "04 Stepper motor driver"
+schematic_component schematic_component_59 extends outside the drawing area of schematic sheet "04 Stepper motor driver"
+schematic_component schematic_component_60 extends outside the drawing area of schematic sheet "04 Stepper motor driver"
+schematic_component schematic_component_61 extends outside the drawing area of schematic sheet "04 Stepper motor driver"
+schematic_component schematic_component_62 extends outside the drawing area of schematic sheet "04 Stepper motor driver"
+J_PD is inferred to face x- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face y+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+J_DATA is inferred to face x- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face y- so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+J_MOTOR is inferred to face x- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+R_PWR_LED may not have availability from jlcpcb (C25104).
+L_BUCK may not have availability from jlcpcb (C780206).
+C_BUCK_OUT1 may not have availability from jlcpcb (C45783).
+C_BUCK_OUT2 may not have availability from jlcpcb (C45783).
+R_BOOT may not have availability from jlcpcb (C11702).
+R_XOUT may not have availability from jlcpcb (C11702).
+R_STATUS_R may not have availability from jlcpcb (C11702).
+R_STATUS_G may not have availability from jlcpcb (C11702).
+R_STATUS_B may not have availability from jlcpcb (C11702).
+R_STATUS_R_GATE may not have availability from jlcpcb (C11702).
+… 2 more source_no_power_pin_defined_warning not shown
+… 2 more source_no_ground_pin_defined_warning not shown
+… 118 more schematic_element_outside_sheet_warning not shown
+… 90 more source_component_availability_warning not shown
+SMT pad J_DATA.GND3 violates copper-to-board-edge clearance (measured 0.250mm, required 0.250mm)
+SMT pad J_DATA.DN2 violates copper-to-board-edge clearance (measured 0.250mm, required 0.250mm)
+SMT pad J_DATA.VBUS3 violates copper-to-board-edge clearance (measured 0.250mm, required 0.250mm)
+SMT pad J_DATA.SBU2 violates copper-to-board-edge clearance (measured 0.250mm, required 0.250mm)
+SMT pad J_DATA.GND4 violates copper-to-board-edge clearance (measured 0.250mm, required 0.250mm)
+SMT pad J_DATA.DP2 violates copper-to-board-edge clearance (measured 0.250mm, required 0.250mm)
+SMT pad J_DATA.CC2 violates copper-to-board-edge clearance (measured 0.250mm, required 0.250mm)
+SMT pad J_DATA.VBUS4 violates copper-to-board-edge clearance (measured 0.250mm, required 0.250mm)
+SMT pad U_ESD.I3 violates copper-to-board-edge clearance (measured 0.250mm, required 0.250mm)
+SMT pad U_ESD.VBUS violates copper-to-board-edge clearance (measured 0.250mm, required 0.250mm)
+Component R_USB_SENSE_L extends outside board boundaries by 4.97mm. Try moving it 4.97mm left to fit within the board edge.
+Component C_IO10 extends outside board boundaries by 7.92mm. Try moving it 7.92mm left to fit within the board edge.
+Component C_IO49 extends outside board boundaries by 4.92mm. Try moving it 4.92mm left to fit within the board edge.
+Component C_USB extends outside board boundaries by 7.92mm. Try moving it 7.92mm left to fit within the board edge.
+Component C_VREG_IN extends outside board boundaries by 4.92mm. Try moving it 4.92mm left to fit within the board edge.
+Component R_RUN extends outside board boundaries by 10.97mm. Try moving it 10.97mm left to fit within the board edge.
+Component C_VCP extends outside board boundaries by 4.92mm. Try moving it 4.92mm left to fit within the board edge.
+Component C_VM_SENSE extends outside board boundaries by 10.92mm. Try moving it 10.92mm left to fit within the board edge.
+Component R_IA extends outside board boundaries by 4.97mm. Try moving it 4.97mm left to fit within the board edge.
+Component C_IADC_A extends outside board boundaries by 7.92mm. Try moving it 7.92mm left to fit within the board edge.
+L_BUCK overlaps TP_BOOT_GND: 1 footprint overlap, 1 pad clearance violation. Move the components apart.
+U_MCU overlaps TP_GND: 2 footprint overlaps, 3 pad clearance violations. Move the components apart.
+U_MCU overlaps TP_SWCLK: 1 footprint overlap, 1 pad clearance violation. Move the components apart.
+U_MCU overlaps TP_SWDIO: 1 footprint overlap, 1 pad clearance violation. Move the components apart.
+R_BUZZER_GATE overlaps TP_RUN: 1 footprint overlap, 1 pad clearance violation. Move the components apart.
+Pads L_BUCK.pin1 and TP_BOOT.pin1 are too close (clearance: 0.015mm, minimum: 0.15mm)
+Pads U_MCU.GND and TP_3V3.pin1 are too close (clearance: 0.05mm, minimum: 0.15mm)
+… 64 more pcb_placement_error not shown
+… 4 more pcb_component_outside_board_error not shown
+95 error(s), all written to dist/studies/usb-layout-20261112/controller/errors.json:
+  74  pcb_placement_error
+  14  pcb_component_outside_board_error
+   5  pcb_footprint_overlap_error
+   2  pcb_pad_pad_clearance_error
+Generating preview images...
+[studies/usb-layout-20261112/controller] Generating PCB SVG...
+[studies/usb-layout-20261112/controller] Written pcb.svg
+[studies/usb-layout-20261112/controller] Generating schematic SVG...
+[studies/usb-layout-20261112/controller] Written schematic.svg
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

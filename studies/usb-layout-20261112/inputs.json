@@ -1,0 +1,151 @@
+{
+  "base_commit": "993c71867f673983218bce3d5ff9d2d2797ecf4d",
+  "status": "local unqualified study; rejected full placement; no publication",
+  "files": [
+    {
+      "path": "studies/usb-layout-20261112/README.md",
+      "bytes": 7982,
+      "sha256": "f0181708182da1f11ab2567e7d80e2f1ad566ca4b3ae546a3936ce9267cccbf6"
+    },
+    {
+      "path": "studies/usb-layout-20261112/audit.json",
+      "bytes": 2950,
+      "sha256": "3f77b92f92a2c098f0b8d626e8858b464a14b9c88f624176d2c70b3b30dd480a"
+    },
+    {
+      "path": "studies/usb-layout-20261112/audit.py",
+      "bytes": 6178,
+      "sha256": "75d4c81cfb7643d09bfd60901eb962a0be7de2e117470f38fdc2c186d92ad9d3"
+    },
+    {
+      "path": "studies/usb-layout-20261112/controller.circuit.tsx",
+      "bytes": 30013,
+      "sha256": "91f92c5a490b6158ec6fa867468fe7200500566958962af5337891c668ebef81"
+    },
+    {
+      "path": "studies/usb-layout-20261112/greedy.json",
+      "bytes": 10252,
+      "sha256": "5b7e170b646009d0fcf39c309d12dce74c9a0a751a976867b8319fcb50d37fb2"
+    },
+    {
+      "path": "studies/usb-layout-20261112/greedy.py",
+      "bytes": 3486,
+      "sha256": "fc43ebf6e53ac3409b7c4d6b0d5cd86ef6138ea4756e5355fd7b731b94c2036d"
+    },
+    {
+      "path": "studies/usb-layout-20261112/harness.circuit.tsx",
+      "bytes": 578,
+      "sha256": "5bb4b3e2bb8eab8c339fbc9f9707974c161fc76634f21afba7d6836ef1534d9f"
+    },
+    {
+      "path": "studies/usb-layout-20261112/import-staging/imports/BM04B_SRSS_TB_LF__SN_/BM04B_SRSS_TB_LF__SN_.obj",
+      "bytes": 34121,
+      "sha256": "82e116e1a05f42b854ef6ec9bb73f3204d230dc6102f8188bd1e84352918de8a"
+    },
+    {
+      "path": "studies/usb-layout-20261112/import-staging/imports/BM04B_SRSS_TB_LF__SN_/BM04B_SRSS_TB_LF__SN_.step",
+      "bytes": 1732790,
+      "sha256": "964a6ef3cf073fa6bd9a72a93f3994d14fdd4580a82e79db9f75d96016a47941"
+    },
+    {
+      "path": "studies/usb-layout-20261112/import-staging/imports/BM04B_SRSS_TB_LF__SN_/BM04B_SRSS_TB_LF__SN_.tsx",
+      "bytes": 4673,
+      "sha256": "3f845df93a42ae19ed396ee6daba88771b4fc3a6b41ab2dd2590139da3ad8753"
+    },
+    {
+      "path": "studies/usb-layout-20261112/logs/controller-build.log",
+      "bytes": 9101,
+      "sha256": "eb278c7d5ed4f038d58f79f2a803918e3cea122af7b00d518586d745600536bb"
+    },
+    {
+      "path": "studies/usb-layout-20261112/logs/cui-ipx5-import.log",
+      "bytes": 223,
+      "sha256": "a8eb907b433fd31fab96497b45cb0195d4bc0ae53cedd7be2f9076839f0693aa"
+    },
+    {
+      "path": "studies/usb-layout-20261112/logs/harness-build.log",
+      "bytes": 1176,
+      "sha256": "e99204a131d9011a2dd3e01748ac5e66f17a5e5220b952e268e6c160094466c9"
+    },
+    {
+      "path": "studies/usb-layout-20261112/logs/jae-all-smt-import.log",
+      "bytes": 223,
+      "sha256": "4c6f4e5e8882f46d772c952885da0d7f509a35927acbfa74d68ae430dfba1771"
+    },
+    {
+      "path": "studies/usb-layout-20261112/logs/usb4160-import.log",
+      "bytes": 221,
+      "sha256": "e2b6c47419562dd1ca6a2702e38ddd3fa030a3fd1b79dbb5afc9b5457a0e207b"
+    },
+    {
+      "path": "studies/usb-layout-20261112/make-controller.py",
+      "bytes": 2958,
+      "sha256": "ba7d4e9ff3ca4d41d4dd8a4f417ced1f44743468a913f7f9f55f9c66b72db066"
+    },
+    {
+      "path": "studies/usb-layout-20261112/pack.py",
+      "bytes": 5726,
+      "sha256": "a3f9e5bbcf83a5ce73bd47221475b1399a3bc729e7f62226b6f6d5970a121ca8"
+    },
+    {
+      "path": "studies/usb-layout-20261112/packing.json",
+      "bytes": 31008,
+      "sha256": "efd85e36d3146cb9873759e4188109b590ee23bda23b5837cd438f97434ff40f"
+    },
+    {
+      "path": "studies/usb-layout-20261112/rasterize.ts",
+      "bytes": 518,
+      "sha256": "5d9ed83ec53360bf6a4e19059223a2c389b72ad985af61c0789e251a57b4de0b"
+    },
+    {
+      "path": "studies/usb-layout-20261112/rejected-placement.json",
+      "bytes": 13068,
+      "sha256": "a2d95e155d05d96616472f5718fbe87c42c0f6aac81bbfdd6fb0953d893b1482"
+    },
+    {
+      "path": "studies/usb-layout-20261112/tsconfig.json",
+      "bytes": 116,
+      "sha256": "2de7557bba1eda434e86864cfa3bdc1fa9db2e37757312ee4935428be155cb78"
+    },
+    {
+      "path": "dist/studies/usb-layout-20261112/controller/circuit.json",
+      "bytes": 2302883,
+      "sha256": "689353524966b7cda142ad5aa5a322b13afd6ee2236badd01a4cb9b6ff49b0c9"
+    },
+    {
+      "path": "dist/studies/usb-layout-20261112/controller/errors.json",
+      "bytes": 40281,
+      "sha256": "e2f02bdf572d1dc2c612d775dc6e029d94bdbcae47b16aee7855dbda14f6bd8b"
+    },
+    {
+      "path": "dist/studies/usb-layout-20261112/controller/pcb.png",
+      "bytes": 424564,
+      "sha256": "5a50b2c3b08d7a9251c4362ab16003eb19f3230866b320aa9fa46ab490e01ead"
+    },
+    {
+      "path": "dist/studies/usb-layout-20261112/controller/pcb.svg",
+      "bytes": 503030,
+      "sha256": "55921e99bf3b3740cce6d375e66e92619293f567ec091d247bfc617464c2ab57"
+    },
+    {
+      "path": "dist/studies/usb-layout-20261112/controller/schematic.svg",
+      "bytes": 189080,
+      "sha256": "bef143455df733dab79d5d65ca53d328c89bdd9d7dc254c671159148b4845058"
+    },
+    {
+      "path": "dist/studies/usb-layout-20261112/harness/circuit.json",
+      "bytes": 33497,
+      "sha256": "4efb3c536ef1a8a2670a6f12b5ca0ea1cf804aaebfe9f2ce49fa3489fc418a38"
+    },
+    {
+      "path": "dist/studies/usb-layout-20261112/harness/pcb.png",
+      "bytes": 25974,
+      "sha256": "0a1d4956b3a0e7c05760ee91a49510612ce1729293265155c350da105200df7d"
+    },
+    {
+      "path": "dist/studies/usb-layout-20261112/harness/pcb.svg",
+      "bytes": 36972,
+      "sha256": "fc4447986883c87ca53b380e9958cefa164862e53851f5082e378327cfba76d8"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+Building 1 file(s)...
+Building studies/usb-layout-20261112/harness.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/studies/usb-layout-20261112/harness/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+J_MOTOR has no pin with requires_ground=true
+No <schematicsheet> was found. Add a <schematicsheet> to define the schematic drawing area.
+J_MOTOR is inferred to face y+ from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x- so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+J_MOTOR may not have availability from jlcpcb (C160390).
+Generating preview images...
+[studies/usb-layout-20261112/harness] Generating PCB SVG...
+[studies/usb-layout-20261112/harness] Written pcb.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

@@ -1,0 +1,129 @@
+{
+  "active_controller_unchanged": true,
+  "user_allows_qualified_compact_harness": true,
+  "header_part": "BM04B-SRSS-TB(LF)(SN)",
+  "header_jlcpcb": "C160390",
+  "header_courtyard_mm2": 34.309821418905145,
+  "header_native_lands": [
+    {
+      "pin": 1,
+      "center_mm": [
+        -1.499997,
+        -1.3250037
+      ],
+      "size_mm": [
+        0.5999988,
+        1.5500096
+      ]
+    },
+    {
+      "pin": 2,
+      "center_mm": [
+        -0.499999,
+        -1.3250037
+      ],
+      "size_mm": [
+        0.5999988,
+        1.5500096
+      ]
+    },
+    {
+      "pin": 3,
+      "center_mm": [
+        0.499999,
+        -1.3250037
+      ],
+      "size_mm": [
+        0.5999988,
+        1.5500096
+      ]
+    },
+    {
+      "pin": 4,
+      "center_mm": [
+        1.499997,
+        -1.3250037
+      ],
+      "size_mm": [
+        0.5999988,
+        1.5500096
+      ]
+    },
+    {
+      "pin": 5,
+      "center_mm": [
+        -2.799969,
+        1.2000103
+      ],
+      "size_mm": [
+        1.1999976,
+        1.7999964
+      ]
+    },
+    {
+      "pin": 5,
+      "center_mm": [
+        2.799969,
+        1.2000103
+      ],
+      "size_mm": [
+        1.1999976,
+        1.7999964
+      ]
+    }
+  ],
+  "header_paste_layers": {
+    "top": 6
+  },
+  "header_native_errors": 0,
+  "header_native_warnings": 5,
+  "header_current_A_at_AWG28": 1,
+  "motor_nominal_phase_current_A": 0.67,
+  "direct_factory_AWG26_crimp_qualified": false,
+  "harness_wire_AWG28_insulation_OD_mm": [
+    0.4,
+    0.8
+  ],
+  "mating_housing": "SHR-04V-S",
+  "mating_contact": "SSH-003T-P0.2-H",
+  "harness_qualified": false,
+  "conditional_full_fitted_courtyard_mm2": 679.3530819183474,
+  "packing_fitted_placed": 87,
+  "packing_unplaced": [
+    "R_USB_SENSE_L",
+    "R_STATUS_R_PD",
+    "R_BUZZER_PD",
+    "C_VREG_IN",
+    "Q_STATUS_G",
+    "R_STATUS_B",
+    "C_VCP",
+    "C_USB",
+    "C_VM_SENSE",
+    "R_IA",
+    "C_IADC_A",
+    "R_RUN",
+    "C_IO49",
+    "C_IO10"
+  ],
+  "testpoints_packed": false,
+  "complete_source_components": 109,
+  "nets": 73,
+  "sheets": 7,
+  "only_changed_electrical_component_pin_maps": [
+    "U_IA",
+    "U_IB"
+  ],
+  "retained_features_verified_by_source_net_contract": true,
+  "native_errors_by_type": {
+    "pcb_placement_error": 74,
+    "pcb_component_outside_board_error": 14,
+    "pcb_footprint_overlap_error": 5,
+    "pcb_pad_pad_clearance_error": 2
+  },
+  "native_warnings": 270,
+  "routes": 0,
+  "vias": 0,
+  "qualified": false,
+  "manufacturing_ready": false,
+  "limits": "Header land dimensions match JST reference layout; this is not process, CAD-body, cable, crimp, retention, motor or thermal qualification. Complete controller diagnostic is deliberately rejected with14 fitted parts parked off-board;7 bare test pads have not been packed. CP-SAT UNKNOWN and bounded constructive failure are not impossibility proofs. INA241 imported pin4 NC metadata remains incorrect; USB locator/paste and radial bulk process remain unresolved."
+}
