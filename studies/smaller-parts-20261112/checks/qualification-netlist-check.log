@@ -1,0 +1,69 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - J_MOTOR: BM04B-GHS-TBT(LF)(SN)
+ - U_IA: INA241A2IDDFR
+ - U_IB: INA241A2IDDFR
+
+NET: A_PLUS
+  - U_IA IN_NEG
+  - J_MOTOR pin1
+
+NET: B_PLUS
+  - U_IB IN_NEG
+  - J_MOTOR pin3
+
+NET: GND
+  - U_IB NC
+  - U_IB REF2
+  - U_IB GND
+  - U_IA NC
+  - U_IA REF2
+  - U_IA GND
+
+NET: V3V3
+  - U_IB REF1
+  - U_IB VS
+  - U_IA REF1
+  - U_IA VS
+
+
+EMPTY NET PINS:
+  - J_MOTOR pin2
+  - J_MOTOR pin4
+  - U_IA OUT
+  - U_IA IN_POS
+  - U_IB OUT
+  - U_IB IN_POS
+
+COMPONENT_PINS:
+J_MOTOR (BM04B-GHS-TBT(LF)(SN))
+- pin1: NETS(A_PLUS)
+- pin2: NETS(A_MINUS)
+- pin3: NETS(B_PLUS)
+- pin4: NETS(B_MINUS)
+- pin5: NOT_CONNECTED
+- pin6: NOT_CONNECTED
+
+U_IA (INA241A2IDDFR)
+- pin1(IN_NEG): NETS(A_PLUS)
+- pin2(GND): NETS(GND)
+- pin3(REF2): NETS(GND)
+- pin4(NC): NETS(GND)
+- pin5(OUT): NETS(I_A_RAW)
+- pin6(VS): NETS(V3V3)
+- pin7(REF1): NETS(V3V3)
+- pin8(IN_POS): NETS(A_DRV_PLUS)
+
+U_IB (INA241A2IDDFR)
+- pin1(IN_NEG): NETS(B_PLUS)
+- pin2(GND): NETS(GND)
+- pin3(REF2): NETS(GND)
+- pin4(NC): NETS(GND)
+- pin5(OUT): NETS(I_B_RAW)
+- pin6(VS): NETS(V3V3)
+- pin7(REF1): NETS(V3V3)
+- pin8(IN_POS): NETS(B_DRV_PLUS)
+

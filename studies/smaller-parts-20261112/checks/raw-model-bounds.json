@@ -1,0 +1,44 @@
+[
+  {
+    "file": "studies/smaller-parts-20261112/import-staging/imports/BM04B_GHS_TBT_LF__SN_/BM04B_GHS_TBT_LF__SN_.obj",
+    "vertices": 1269,
+    "raw_min": [
+      -2.25,
+      -3.1975,
+      -0.01
+    ],
+    "raw_max": [
+      6.0,
+      1.7625,
+      4.05
+    ],
+    "raw_size": [
+      8.25,
+      4.96,
+      4.06
+    ],
+    "sha256": "d30d648648386a584fcca4cdeb79683974ae2a3a5796b225e558d04df7676792",
+    "scope": "raw supplier mesh coordinates; native registration/seating, mated cable, motor and fastener fit are not qualified"
+  },
+  {
+    "file": "studies/smaller-parts-20261112/import-staging/imports/INA241A2IDDFR/INA241A2IDDFR.obj",
+    "vertices": 10726,
+    "raw_min": [
+      -1.40279,
+      -1.45,
+      0.050795
+    ],
+    "raw_max": [
+      1.40279,
+      1.45,
+      1.101
+    ],
+    "raw_size": [
+      2.80558,
+      2.9,
+      1.050205
+    ],
+    "sha256": "29ead462b26316abed33e384d0fa4e955a01b7cf323c497440803d2a5ee213b3",
+    "scope": "raw supplier mesh coordinates; native registration/seating, mated cable, motor and fastener fit are not qualified"
+  }
+]

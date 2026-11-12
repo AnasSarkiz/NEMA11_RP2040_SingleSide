@@ -1,0 +1,114 @@
+{
+  "base_commit": "ebebbf2ef418557dfec44e8c2327d81e569e1b3e",
+  "active_controller_unchanged": true,
+  "source_and_native_courtyards_match": true,
+  "geometry": [
+    {
+      "name": "J_MOTOR",
+      "part": "C161692",
+      "native_area_mm2": 54.59390322472799,
+      "source_area_mm2": 54.59390322472798,
+      "matches": true
+    },
+    {
+      "name": "U_IA",
+      "part": "C5240853",
+      "native_area_mm2": 13.327746744393234,
+      "source_area_mm2": 13.327746744393238,
+      "matches": true
+    },
+    {
+      "name": "U_IB",
+      "part": "C5240853",
+      "native_area_mm2": 13.32774674439324,
+      "source_area_mm2": 13.327746744393238,
+      "matches": true
+    }
+  ],
+  "baseline_fitted_courtyard_mm2": 909.0671601974792,
+  "hypothetical_replacement_courtyard_mm2": 735.660094908528,
+  "provisional_available_mm2": 714.6022182822014,
+  "saving_mm2": 173.40706528895123,
+  "residual_deficit_mm2": 21.05787662632656,
+  "conditional_area_screen_pass": false,
+  "maximum_bulk_courtyard_mm2_if_only_further_replacement": 45.256869222758766,
+  "parts_removed_from_active_controller": [],
+  "manufacturer_metadata_conflicts": [
+    {
+      "name": "U_IA",
+      "pin": 4,
+      "native_do_not_connect": true,
+      "actual_nets": [
+        "GND"
+      ],
+      "manufacturer_requirement": "Ground reserved pin 4, TI SBOSA30D Table 5-1",
+      "qualified": false
+    },
+    {
+      "name": "U_IB",
+      "pin": 4,
+      "native_do_not_connect": true,
+      "actual_nets": [
+        "GND"
+      ],
+      "manufacturer_requirement": "Ground reserved pin 4, TI SBOSA30D Table 5-1",
+      "qualified": false
+    }
+  ],
+  "diagnostic_fixture_counts": {
+    "source_group": 1,
+    "source_net": 10,
+    "source_port": 22,
+    "source_component": 3,
+    "source_board": 1,
+    "source_refdes_convention_warning": 1,
+    "source_trace": 20,
+    "source_no_power_pin_defined_warning": 3,
+    "source_no_ground_pin_defined_warning": 1,
+    "schematic_component": 3,
+    "schematic_text": 16,
+    "schematic_group": 1,
+    "schematic_port": 22,
+    "schematic_trace": 19,
+    "schematic_net_label": 4,
+    "schematic_missing_sheet_warning": 1,
+    "pcb_component": 3,
+    "pcb_board": 1,
+    "pcb_smtpad": 22,
+    "pcb_solder_paste": 22,
+    "pcb_silkscreen_path": 22,
+    "pcb_silkscreen_circle": 3,
+    "pcb_silkscreen_text": 3,
+    "pcb_courtyard_outline": 3,
+    "pcb_port": 22,
+    "cad_component": 3,
+    "source_property_ignored_warning": 3,
+    "source_component_availability_warning": 3,
+    "source_project_metadata": 1
+  },
+  "diagnostic_json_sha256": "f04cd37244c11aaea7753ea6da4f1e4b6ab00f67b4c5684cf5723b2578039f9a",
+  "expected_gain_v_per_a": 1.0,
+  "nominal_zero_v": 1.65,
+  "nominal_output_at_motor_rating_v": [
+    0.9799999999999999,
+    2.32
+  ],
+  "two_channel_iq_max_mA_at_full_temperature": 6.4,
+  "jst_gh_wire_insulation_diameter_mm": [
+    0.76,
+    1.0
+  ],
+  "factory_wire_insulation_diameter_verified": false,
+  "spring_clamp_requirement_change_accepted": false,
+  "native_build_exit": 0,
+  "native_pin_check_exit": 0,
+  "native_pin_findings": {
+    "errors": 0,
+    "warnings": 4
+  },
+  "candidate_qualified": false,
+  "full_board_placement_pass": false,
+  "routing_attempted": false,
+  "manufacturing_ready": false,
+  "limits": "Isolated three-part fixture, not a controller. Source/net geometry is not copper connectivity or hardware validation. Body size is not courtyard area. Imported pin4 metadata contradicts manufacturer. GH mechanical pads5/6 are NC; direct motor wire crimp and mating/strain relief remain unqualified."
+}

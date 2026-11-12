@@ -1,0 +1,15 @@
+[
+  {
+    "path": "jst-gh.pdf",
+    "url": "https://www.jst-mfg.com/product/pdf/eng/eGH.pdf",
+    "downloaded": false,
+    "error": "HTTP Error 403: Forbidden",
+    "fallback": "Manufacturer document was read using the web tool; do not treat its extraction as downloaded original bytes."
+  },
+  {
+    "path": "ina241a.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/ina241a.pdf",
+    "sha256": "d0f0d3a73c1bc2b4fe42d9cd6a4270c316d1164f8f86dc027f802428950029e8",
+    "bytes": 3053933
+  }
+]

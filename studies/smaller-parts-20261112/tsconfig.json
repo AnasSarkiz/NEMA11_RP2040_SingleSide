@@ -1,0 +1,4 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["qualification.circuit.tsx", "import-staging/imports/**/*.tsx", "../../assets.d.ts"]
+}

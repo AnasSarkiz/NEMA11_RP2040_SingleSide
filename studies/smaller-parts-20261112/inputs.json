@@ -1,0 +1,58 @@
+{
+  "base_commit": "ebebbf2ef418557dfec44e8c2327d81e569e1b3e",
+  "cli": "0.1.2454",
+  "tscircuit": "0.0.3165",
+  "core": "0.0.2347",
+  "native_import_commands": [
+    "tsci import --jlcpcb --download --use-exact-footprint C161692",
+    "tsci import --jlcpcb --download --use-exact-footprint C5240853"
+  ],
+  "definitions_modified": false,
+  "files": [
+    {
+      "path": "checks/courtyard-area-screen.json",
+      "sha256": "db376dfe1d95408fcc39a6c55d75399cb62e28c84386f4dd9436db0fe600fdcb",
+      "bytes": 4575
+    },
+    {
+      "path": "dist/studies/smaller-parts-20261112/qualification/circuit.json",
+      "sha256": "f04cd37244c11aaea7753ea6da4f1e4b6ab00f67b4c5684cf5723b2578039f9a",
+      "bytes": 102280
+    },
+    {
+      "path": "studies/smaller-parts-20261112/import-staging/imports/BM04B_GHS_TBT_LF__SN_/BM04B_GHS_TBT_LF__SN_.obj",
+      "sha256": "d30d648648386a584fcca4cdeb79683974ae2a3a5796b225e558d04df7676792",
+      "bytes": 80934
+    },
+    {
+      "path": "studies/smaller-parts-20261112/import-staging/imports/BM04B_GHS_TBT_LF__SN_/BM04B_GHS_TBT_LF__SN_.step",
+      "sha256": "8e389399cfb489bb14e4a1cd678bf5722318e1ef09206b0662cb9f78fff5db0a",
+      "bytes": 2295497
+    },
+    {
+      "path": "studies/smaller-parts-20261112/import-staging/imports/BM04B_GHS_TBT_LF__SN_/BM04B_GHS_TBT_LF__SN_.tsx",
+      "sha256": "b908cd1a9f20999e8d541f9ac431f49a2cc949677809b81d47375e510c3007ee",
+      "bytes": 2869
+    },
+    {
+      "path": "studies/smaller-parts-20261112/import-staging/imports/INA241A2IDDFR/INA241A2IDDFR.obj",
+      "sha256": "29ead462b26316abed33e384d0fa4e955a01b7cf323c497440803d2a5ee213b3",
+      "bytes": 791690
+    },
+    {
+      "path": "studies/smaller-parts-20261112/import-staging/imports/INA241A2IDDFR/INA241A2IDDFR.step",
+      "sha256": "ef49c65f92264735b05d9a61244fc173e2ecdbc8c17d2da37bf9d494adddd9e1",
+      "bytes": 2356126
+    },
+    {
+      "path": "studies/smaller-parts-20261112/import-staging/imports/INA241A2IDDFR/INA241A2IDDFR.tsx",
+      "sha256": "b343f630792600b68807c589d699decac391400203d1a639121e2bddc8ad61b1",
+      "bytes": 3564
+    },
+    {
+      "path": "studies/smaller-parts-20261112/qualification.circuit.tsx",
+      "sha256": "861820431368dc4e00a610e624bdc9591cfc0fdd4013929a74104edba079d9dd",
+      "bytes": 1338
+    }
+  ]
+}

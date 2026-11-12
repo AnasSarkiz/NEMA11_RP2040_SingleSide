@@ -1,0 +1,24 @@
+Error in createContainer
+14010 |               : null;
+14011 |             fiberTag &&
+14012 |               (resolvedType +=
+14013 |                 "\n\nCheck the render method of `" + fiberTag + "`.");
+14014 |             fiberTag = 29;
+14015 |             pendingProps = Error(
+                                   ^
+error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: array.
+      at createFiberFromTypeAndProps (/workspace/scratch/07b71d1575ce/NEMA11_RP2040_SingleSide/node_modules/react-reconciler/cjs/react-reconciler.development.js:14015:28)
+      at createFiberFromElement (/workspace/scratch/07b71d1575ce/NEMA11_RP2040_SingleSide/node_modules/react-reconciler/cjs/react-reconciler.development.js:14029:14)
+      at reconcileChildFibersImpl (/workspace/scratch/07b71d1575ce/NEMA11_RP2040_SingleSide/node_modules/react-reconciler/cjs/react-reconciler.development.js:5515:31)
+      at <anonymous> (/workspace/scratch/07b71d1575ce/NEMA11_RP2040_SingleSide/node_modules/react-reconciler/cjs/react-reconciler.development.js:5693:33)
+      at reconcileChildren (/workspace/scratch/07b71d1575ce/NEMA11_RP2040_SingleSide/node_modules/react-reconciler/cjs/react-reconciler.development.js:6198:13)
+      at beginWork (/workspace/scratch/07b71d1575ce/NEMA11_RP2040_SingleSide/node_modules/react-reconciler/cjs/react-reconciler.development.js:8126:15)
+      at runWithFiberInDEV (/workspace/scratch/07b71d1575ce/NEMA11_RP2040_SingleSide/node_modules/react-reconciler/cjs/react-reconciler.development.js:1738:13)
+      at performUnitOfWork (/workspace/scratch/07b71d1575ce/NEMA11_RP2040_SingleSide/node_modules/react-reconciler/cjs/react-reconciler.development.js:12834:22)
+      at workLoopSync (/workspace/scratch/07b71d1575ce/NEMA11_RP2040_SingleSide/node_modules/react-reconciler/cjs/react-reconciler.development.js:12644:41)
+      at renderRootSync (/workspace/scratch/07b71d1575ce/NEMA11_RP2040_SingleSide/node_modules/react-reconciler/cjs/react-reconciler.development.js:12624:11)
+      at async <anonymous> (/workspace/scratch/07b71d1575ce/NEMA11_RP2040_SingleSide/node_modules/@tscircuit/cli/dist/cli/main.js:231556:27)
+      at async <anonymous> (/workspace/scratch/07b71d1575ce/NEMA11_RP2040_SingleSide/node_modules/@tscircuit/cli/dist/cli/main.js:231589:33)
+      at async <anonymous> (/workspace/scratch/07b71d1575ce/NEMA11_RP2040_SingleSide/node_modules/@tscircuit/cli/dist/cli/main.js:231620:28)
+
+Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: array.

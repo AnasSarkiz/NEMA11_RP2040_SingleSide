@@ -1,0 +1,6 @@
+Errors: 0
+Warnings: 4
+- source_no_power_pin_defined_warning: J_MOTOR has no pin with requires_power=true
+- source_no_power_pin_defined_warning: U_IA has no pin with requires_power=true
+- source_no_power_pin_defined_warning: U_IB has no pin with requires_power=true
+- source_no_ground_pin_defined_warning: J_MOTOR has no pin with requires_ground=true
