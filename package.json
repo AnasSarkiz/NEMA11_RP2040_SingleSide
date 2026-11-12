@@ -1,6 +1,6 @@
 {
   "name": "@tsci/AnasSarkiz.NEMA11_RP2040_SingleSide",
-  "version": "0.1.0-dev.1",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
   "description": "NEMA11 RP2040 single-side assembly study; two copper layers; unqualified WIP",
